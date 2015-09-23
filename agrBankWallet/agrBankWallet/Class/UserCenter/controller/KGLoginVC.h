@@ -10,5 +10,12 @@
 
 @interface KGLoginVC : KGCommonBaseVC
 
+@property (nonatomic, weak)IBOutlet UITextField *userName;
+
+@property (nonatomic, weak)IBOutlet UITextField *userPassword;
+
+- (IBAction)handleLoginBtnAction:(id)sender;
+
+- (IBAction)handleRegisterBtnAction:(id)sender;
 
 @end
