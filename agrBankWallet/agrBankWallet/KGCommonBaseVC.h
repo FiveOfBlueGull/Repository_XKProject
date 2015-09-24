@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "GlobalDataModel.h"
+#import <AVOSCloud/AVOSCloud.h>
+
 
 @interface KGCommonBaseVC : UIViewController
 

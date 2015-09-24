@@ -12,10 +12,16 @@
 #import "KGCommonBaseVC.h"
 #import "KGCommonBaseNVC.h"
 #import "KGUserCenterVC.h"
+#import <AVOSCloud/AVOSCloud.h>
+
+#define AVOSCloudAppID  @"jsxYdhFRa5VEH41xC8Rlpu24"
+#define AVOSCloudAppKey @"FqXa7pxKzxUewPaQxzY63Dz8"
 
 @interface AppDelegate ()
 
 @end
+
+
 
 @implementation AppDelegate
 
@@ -24,6 +30,10 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.window makeKeyAndVisible];
+    
+    
+    [AVOSCloud setApplicationId:AVOSCloudAppID clientKey:AVOSCloudAppKey];
+    
     
     NSDictionary *imgDic1 = @{@"Default":[UIImage imageNamed:@"3tagTabPicNormal.png"],
                               @"Seleted":[UIImage imageNamed:@"3tagTabPicSelected.png"]};

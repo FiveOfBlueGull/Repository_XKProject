@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KGUserCenterCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vKN-3e-jjW">
+                        <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="vKN-3e-jjW" secondAttribute="height" multiplier="1:1" id="vuG-7q-o4r"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiaozhuan_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZKV-M0-OCo">
+                        <rect key="frame" x="276" y="0.0" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZKV-M0-OCo" secondAttribute="height" multiplier="1:1" id="SUu-1s-xEk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjR-uC-2Xa">
+                        <rect key="frame" x="42" y="0.0" width="228" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="ZKV-M0-OCo" secondAttribute="centerY" id="1kA-nt-DO9"/>
+                    <constraint firstAttribute="bottom" secondItem="vKN-3e-jjW" secondAttribute="bottom" id="Fcy-JT-xug"/>
+                    <constraint firstItem="wjR-uC-2Xa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kg5-gF-BUU"/>
+                    <constraint firstItem="wjR-uC-2Xa" firstAttribute="leading" secondItem="vKN-3e-jjW" secondAttribute="trailing" constant="-1" id="QRh-fa-hJ2"/>
+                    <constraint firstAttribute="bottom" secondItem="ZKV-M0-OCo" secondAttribute="bottom" id="TqM-5D-eZE"/>
+                    <constraint firstItem="vKN-3e-jjW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ul7-0U-Ewa"/>
+                    <constraint firstItem="ZKV-M0-OCo" firstAttribute="leading" secondItem="wjR-uC-2Xa" secondAttribute="trailing" constant="6" id="bh9-6b-yoV"/>
+                    <constraint firstAttribute="trailing" secondItem="ZKV-M0-OCo" secondAttribute="trailing" constant="1" id="dJe-EW-nYv"/>
+                    <constraint firstItem="ZKV-M0-OCo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="o4E-4e-G7p"/>
+                    <constraint firstAttribute="bottom" secondItem="wjR-uC-2Xa" secondAttribute="bottom" id="oqP-U6-TMd"/>
+                    <constraint firstItem="vKN-3e-jjW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wai-wW-hlp"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1kA-nt-DO9"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftImageView" destination="vKN-3e-jjW" id="Y6h-Q1-pBd"/>
+                <outlet property="righImageView" destination="ZKV-M0-OCo" id="dcX-iz-7i7"/>
+                <outlet property="titleLbl" destination="wjR-uC-2Xa" id="C9Q-Bs-ZEd"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tiaozhuan_2.png" width="20" height="20"/>
+    </resources>
+</document>

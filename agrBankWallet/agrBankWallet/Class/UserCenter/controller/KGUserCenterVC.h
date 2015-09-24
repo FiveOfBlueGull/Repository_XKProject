@@ -10,4 +10,9 @@
 
 @interface KGUserCenterVC : KGCommonBaseVC
 
+@property (nonatomic, weak)IBOutlet UITableView *tableView;
+
+@property (nonatomic, weak)IBOutlet UILabel     *userNameLbl;
+@property (nonatomic, weak)IBOutlet UILabel     *userAccountLbl;
+
 @end
