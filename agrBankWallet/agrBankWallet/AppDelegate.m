@@ -11,7 +11,7 @@
 #import "RDVTabBarItem.h"
 #import "KGCommonBaseVC.h"
 #import "KGCommonBaseNVC.h"
-#import "KGLoginVC.h"
+#import "KGUserCenterVC.h"
 
 @interface AppDelegate ()
 
@@ -43,7 +43,7 @@
     KGCommonBaseVC *formVC = [[KGCommonBaseVC alloc] init];
     KGCommonBaseNVC *nvc3 = [[KGCommonBaseNVC alloc] initWithRootViewController:formVC];
     
-    KGCommonBaseVC *userCenterVC = [[KGLoginVC alloc] initWithNibName:@"KGLoginVC" bundle:nil];
+    KGCommonBaseVC *userCenterVC = [[KGUserCenterVC alloc] initWithNibName:@"KGUserCenterVC" bundle:nil];
     KGCommonBaseNVC *nvc4 = [[KGCommonBaseNVC alloc] initWithRootViewController:userCenterVC];
     
     RDVTabBarController *tbVC = [[RDVTabBarController alloc] init];

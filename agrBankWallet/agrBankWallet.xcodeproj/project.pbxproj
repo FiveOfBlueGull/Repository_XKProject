@@ -48,6 +48,8 @@
 		8ED2DBCF1BB2A9DC0025D16C /* KGLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBCD1BB2A9DC0025D16C /* KGLoginVC.xib */; };
 		8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD11BB2AD7B0025D16C /* KGRegisterVC.m */; };
 		8ED2DBD41BB2AD7B0025D16C /* KGRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD21BB2AD7B0025D16C /* KGRegisterVC.xib */; };
+		8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD61BB2B6D70025D16C /* KGUserCenterVC.m */; };
+		8ED2DBD91BB2B6D70025D16C /* KGUserCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD71BB2B6D70025D16C /* KGUserCenterVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,9 @@
 		8ED2DBD01BB2AD7B0025D16C /* KGRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRegisterVC.h; sourceTree = "<group>"; };
 		8ED2DBD11BB2AD7B0025D16C /* KGRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRegisterVC.m; sourceTree = "<group>"; };
 		8ED2DBD21BB2AD7B0025D16C /* KGRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRegisterVC.xib; sourceTree = "<group>"; };
+		8ED2DBD51BB2B6D70025D16C /* KGUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserCenterVC.h; sourceTree = "<group>"; };
+		8ED2DBD61BB2B6D70025D16C /* KGUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserCenterVC.m; sourceTree = "<group>"; };
+		8ED2DBD71BB2B6D70025D16C /* KGUserCenterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGUserCenterVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +386,9 @@
 				8ED2DBD01BB2AD7B0025D16C /* KGRegisterVC.h */,
 				8ED2DBD11BB2AD7B0025D16C /* KGRegisterVC.m */,
 				8ED2DBD21BB2AD7B0025D16C /* KGRegisterVC.xib */,
+				8ED2DBD51BB2B6D70025D16C /* KGUserCenterVC.h */,
+				8ED2DBD61BB2B6D70025D16C /* KGUserCenterVC.m */,
+				8ED2DBD71BB2B6D70025D16C /* KGUserCenterVC.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -566,6 +574,7 @@
 				8ED2DBC01BB2A1FB0025D16C /* Default@2x.png in Resources */,
 				8ED2DBB21BB2A1020025D16C /* 3tagTabPicNormal@2x.png in Resources */,
 				8ED2DBAB1BB2A1020025D16C /* 3tagTabHomeNormal@3x.png in Resources */,
+				8ED2DBD91BB2B6D70025D16C /* KGUserCenterVC.xib in Resources */,
 				8ED2DBA81BB2A1020025D16C /* 3tagTabFindSelected@2x.png in Resources */,
 				8ED2DBAC1BB2A1020025D16C /* 3tagTabHomeSelected@2x.png in Resources */,
 				8ED2DBB11BB2A1020025D16C /* 3tagTabMeSelected@3x.png in Resources */,
@@ -591,6 +600,7 @@
 				8ED2DB3B1BB290BB0025D16C /* main.m in Sources */,
 				8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */,
 				8ED2DB821BB298610025D16C /* KGCommonBaseNVC.m in Sources */,
+				8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */,
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
 				8ED2DBCA1BB2A48A0025D16C /* RDVTabBarItem.m in Sources */,
 				8ED2DB7F1BB2982E0025D16C /* KGCommonBaseVC.m in Sources */,

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KGLoginVC">
             <connections>
+                <outlet property="userName" destination="hk2-wG-Xx9" id="n1j-cd-SWc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,26 +20,35 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
                 </imageView>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hk2-wG-Xx9">
-                    <rect key="frame" x="33" y="151" width="255" height="30"/>
+                    <rect key="frame" x="33" y="151" width="255" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="登录密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ysd-qy-gmV">
-                    <rect key="frame" x="33" y="189" width="255" height="30"/>
+                    <rect key="frame" x="33" y="186" width="255" height="24"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="handleRegisterBtnAction:" destination="-1" eventType="touchUpInside" id="DLu-Zb-Tr4"/>
+                    </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rI-dr-gjs">
-                    <rect key="frame" x="33" y="269" width="255" height="30"/>
+                    <rect key="frame" x="33" y="252" width="255" height="23"/>
                     <state key="normal" title="登录">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="handleLoginBtnAction:" destination="-1" eventType="touchUpInside" id="UTh-34-0T4"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uay-gD-6BV">
-                    <rect key="frame" x="33" y="318" width="255" height="30"/>
+                    <rect key="frame" x="33" y="292" width="255" height="25"/>
                     <state key="normal" title="立即注册">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="handleRegisterBtnAction:" destination="-1" eventType="touchUpInside" id="V3l-4m-faP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
