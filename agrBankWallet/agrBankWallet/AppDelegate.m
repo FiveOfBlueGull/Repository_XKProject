@@ -14,6 +14,8 @@
 #import "KGUserCenterVC.h"
 #import <AVOSCloud/AVOSCloud.h>
 
+#import "KGFormVC.h"
+
 #define AVOSCloudAppID  @"jsxYdhFRa5VEH41xC8Rlpu24"
 #define AVOSCloudAppKey @"FqXa7pxKzxUewPaQxzY63Dz8"
 
@@ -50,7 +52,7 @@
     KGCommonBaseVC *activityVC = [[KGCommonBaseVC alloc] init];
     KGCommonBaseNVC *nvc2 = [[KGCommonBaseNVC alloc] initWithRootViewController:activityVC];
     
-    KGCommonBaseVC *formVC = [[KGCommonBaseVC alloc] init];
+    KGFormVC *formVC = [[KGFormVC alloc] init];
     KGCommonBaseNVC *nvc3 = [[KGCommonBaseNVC alloc] initWithRootViewController:formVC];
     
     KGCommonBaseVC *userCenterVC = [[KGUserCenterVC alloc] initWithNibName:@"KGUserCenterVC" bundle:nil];

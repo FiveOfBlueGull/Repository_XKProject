@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		309098A81BB6FC7B00C30BCE /* KGFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 309098A71BB6FC7B00C30BCE /* KGFormVC.m */; };
 		8ED2DB3B1BB290BB0025D16C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DB3A1BB290BB0025D16C /* main.m */; };
 		8ED2DB3E1BB290BB0025D16C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DB3D1BB290BB0025D16C /* AppDelegate.m */; };
 		8ED2DB461BB290BB0025D16C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DB451BB290BB0025D16C /* Images.xcassets */; };
@@ -81,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		309098A61BB6FC7B00C30BCE /* KGFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGFormVC.h; sourceTree = "<group>"; };
+		309098A71BB6FC7B00C30BCE /* KGFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGFormVC.m; sourceTree = "<group>"; };
 		8ED2DB351BB290BB0025D16C /* agrBankWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agrBankWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED2DB391BB290BB0025D16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED2DB3A1BB290BB0025D16C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +188,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309098A21BB6FC3B00C30BCE /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				309098A31BB6FC5000C30BCE /* controller */,
+				309098A51BB6FC6400C30BCE /* view */,
+				309098A41BB6FC5B00C30BCE /* model */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		309098A31BB6FC5000C30BCE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				309098A61BB6FC7B00C30BCE /* KGFormVC.h */,
+				309098A71BB6FC7B00C30BCE /* KGFormVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		309098A41BB6FC5B00C30BCE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		309098A51BB6FC6400C30BCE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		8ED2DB2C1BB290BB0025D16C = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +292,7 @@
 		8ED2DB5E1BB297050025D16C /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				8ED2DB6E1BB297050025D16C /* Form */,
+				309098A21BB6FC3B00C30BCE /* Form */,
 				8ED2DB721BB297050025D16C /* Introduction */,
 				8ED2DB5F1BB297050025D16C /* Activity */,
 				8ED2DB761BB297050025D16C /* UserCenter */,
@@ -340,37 +376,6 @@
 			sourceTree = "<group>";
 		};
 		8ED2DB6D1BB297050025D16C /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		8ED2DB6E1BB297050025D16C /* Form */ = {
-			isa = PBXGroup;
-			children = (
-				8ED2DB6F1BB297050025D16C /* controller */,
-				8ED2DB701BB297050025D16C /* model */,
-				8ED2DB711BB297050025D16C /* view */,
-			);
-			path = Form;
-			sourceTree = "<group>";
-		};
-		8ED2DB6F1BB297050025D16C /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		8ED2DB701BB297050025D16C /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		8ED2DB711BB297050025D16C /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -686,6 +691,7 @@
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
 				8ED2DBCA1BB2A48A0025D16C /* RDVTabBarItem.m in Sources */,
 				8ED2DB7F1BB2982E0025D16C /* KGCommonBaseVC.m in Sources */,
+				309098A81BB6FC7B00C30BCE /* KGFormVC.m in Sources */,
 				8ED2DBC81BB2A48A0025D16C /* RDVTabBar.m in Sources */,
 				8ED2DB881BB29A420025D16C /* GlobalDataModel.m in Sources */,
 			);
@@ -875,6 +881,7 @@
 				8ED2DB5A1BB290BB0025D16C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED2DB5B1BB290BB0025D16C /* Build configuration list for PBXNativeTarget "agrBankWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -883,6 +890,7 @@
 				8ED2DB5D1BB290BB0025D16C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
