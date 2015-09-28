@@ -15,6 +15,7 @@
 #import <AVOSCloud/AVOSCloud.h>
 
 #import "KGFormVC.h"
+#import "KGActivityListVC.h"
 
 #define AVOSCloudAppID  @"jsxYdhFRa5VEH41xC8Rlpu24"
 #define AVOSCloudAppKey @"FqXa7pxKzxUewPaQxzY63Dz8"
@@ -49,7 +50,8 @@
     KGCommonBaseVC *introductionVC = [[KGCommonBaseVC alloc] init];
     KGCommonBaseNVC *nvc1 = [[KGCommonBaseNVC alloc] initWithRootViewController:introductionVC];
     
-    KGCommonBaseVC *activityVC = [[KGCommonBaseVC alloc] init];
+    
+    KGCommonBaseVC *activityVC = [UIStoryboard storyboardWithName:@"ActivityStoryboard" bundle:nil].instantiateInitialViewController;
     KGCommonBaseNVC *nvc2 = [[KGCommonBaseNVC alloc] initWithRootViewController:activityVC];
     
     KGFormVC *formVC = [[KGFormVC alloc] init];
