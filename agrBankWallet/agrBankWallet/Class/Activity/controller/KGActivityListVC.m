@@ -8,6 +8,8 @@
 
 #import "KGActivityListVC.h"
 #import "ActivityListcell.h"
+#import "KGActivityDetailVC.h"
+#import "KGCommonBaseNVC.h"
 
 @interface KGActivityListVC ()
 
@@ -56,7 +58,8 @@
     
     NSString *_content = @"活动简介免费获取活动简介免费获取活动简介免费获取活动简介";
     
-    cell.picture.backgroundColor = [UIColor redColor];
+    cell.picture.contentMode = UIViewContentModeCenter;
+    cell.picture.image = [UIImage imageNamed:@"defaultMallImage"];
     cell.nameLabel.text = @"活动名称";
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
