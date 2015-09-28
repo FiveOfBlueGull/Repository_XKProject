@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KGUserCenterVC">
             <connections>
+                <outlet property="tableView" destination="2B1-58-awI" id="mrN-W3-gRW"/>
+                <outlet property="userAccountLbl" destination="56K-mi-0Cs" id="ml8-aB-SAT"/>
+                <outlet property="userNameLbl" destination="LiL-S6-emh" id="AOc-On-bed"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <rect key="frame" x="0.0" y="64" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2B1-58-awI">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="PuY-hS-M2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gaosibeijing.png" translatesAutoresizingMaskIntoConstraints="NO" id="mN7-kp-Lqm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="admin.png" translatesAutoresizingMaskIntoConstraints="NO" id="rDo-d8-gBq">
+                                <rect key="frame" x="12" y="12" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Zd8-DZ-CTj"/>
+                                    <constraint firstAttribute="height" constant="80" id="r7a-Ng-25W"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yonghuming.png" translatesAutoresizingMaskIntoConstraints="NO" id="2WI-AK-c2m">
+                                <rect key="frame" x="118" y="28" width="20" height="20"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jifen.png" translatesAutoresizingMaskIntoConstraints="NO" id="RZn-I7-YdB">
+                                <rect key="frame" x="118" y="58" width="20" height="20"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiL-S6-emh">
+                                <rect key="frame" x="146" y="28" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50积分" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56K-mi-0Cs">
+                                <rect key="frame" x="146" y="57" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.180392161" green="0.88235300780000003" blue="0.17254902420000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="mN7-kp-Lqm" firstAttribute="leading" secondItem="PuY-hS-M2Z" secondAttribute="leading" id="PIN-jQ-WIP"/>
+                            <constraint firstItem="rDo-d8-gBq" firstAttribute="leading" secondItem="PuY-hS-M2Z" secondAttribute="leading" constant="12" id="PVg-9a-0aZ"/>
+                            <constraint firstItem="mN7-kp-Lqm" firstAttribute="top" secondItem="PuY-hS-M2Z" secondAttribute="top" id="Wau-mk-EfE"/>
+                            <constraint firstAttribute="trailing" secondItem="mN7-kp-Lqm" secondAttribute="trailing" id="bzQ-kH-crF"/>
+                            <constraint firstAttribute="bottom" secondItem="mN7-kp-Lqm" secondAttribute="bottom" id="dhU-61-qkR"/>
+                            <constraint firstAttribute="centerY" secondItem="rDo-d8-gBq" secondAttribute="centerY" id="nJS-ar-hlf"/>
+                        </constraints>
+                    </view>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="aqH-D9-nc1">
+                        <rect key="frame" x="0.0" y="435" width="320" height="69"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="QTS-gw-yjT"/>
+                        <outlet property="delegate" destination="-1" id="o3K-BM-vDb"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2B1-58-awI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="QyU-Ar-dGS"/>
+                <constraint firstItem="2B1-58-awI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hVI-a4-MzH"/>
+                <constraint firstAttribute="trailing" secondItem="2B1-58-awI" secondAttribute="trailing" id="qkb-pD-i55"/>
+                <constraint firstAttribute="bottom" secondItem="2B1-58-awI" secondAttribute="bottom" id="sCh-8e-xX7"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="284" y="245"/>
+            <point key="canvasLocation" x="396" y="182"/>
         </view>
     </objects>
+    <resources>
+        <image name="admin.png" width="80" height="80"/>
+        <image name="gaosibeijing.png" width="640" height="207"/>
+        <image name="jifen.png" width="20" height="20"/>
+        <image name="yonghuming.png" width="20" height="20"/>
+    </resources>
 </document>

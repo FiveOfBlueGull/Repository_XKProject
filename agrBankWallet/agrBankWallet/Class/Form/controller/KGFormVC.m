@@ -1,23 +1,24 @@
 //
-//  KGRegisterVC.m
+//  KGFormVC.m
 //  agrBankWallet
 //
-//  Created by lianzhandong on 15/9/23.
+//  Created by Neely on 15/9/27.
 //  Copyright (c) 2015年 lianzhandong. All rights reserved.
 //
 
-#import "KGRegisterVC.h"
+#import "KGFormVC.h"
 
-@interface KGRegisterVC ()
+@interface KGFormVC ()
 
 @end
 
-@implementation KGRegisterVC
+@implementation KGFormVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    self.title = @"注册";
+    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"from";
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,6 +13,7 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
+        [self getInfoFromLocal];
     }
     return self;
 }
@@ -26,13 +27,59 @@
     return instance;
 }
 
+- (BOOL)isLogin{
+    if (!self.userName) {
+        return NO;
+    }
+    if ([self.userName isEqualToString:@""]) {
+        return NO;
+    }
+    return YES;
+}
 
-//- (void)setHasFinishedIntroduction:(BOOL)hasFinishedIntroduction{
-//    if (_hasFinishedIntroduction != hasFinishedIntroduction) {
-//        _hasFinishedIntroduction = hasFinishedIntroduction;
-//        [[NSUserDefaults standardUserDefaults] setBool:_hasFinishedIntroduction forKey:@"hasFinishedIntroduction"];
-//    }
-//}
+- (void)logout{
+    self.userName = @"";
+    self.userAccount = @"";
+    self.userPassword = @"";
+    self.userPhone = @"";
+    self.userType = @(-1);
+    self.userNick = @"";
+    [self saveInfoToLocal];
+}
 
+- (void)didLoginWithReturnInfo:(NSDictionary *)info{
+    self.userName = info[@"userName"];
+    self.userAccount = info[@"userAccount"];
+    self.userPassword = info[@"userPassword"];
+    self.userPhone = info[@"userPhone"];
+    self.userType = info[@"userType"];
+    self.userNick = info[@"userNick"];
+    [self saveInfoToLocal];
+}
+
+- (void)saveInfoToLocal{
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.userName forKey:@"userName"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.userAccount forKey:@"userAccount"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.userPassword forKey:@"userPassword"];
+
+    [[NSUserDefaults standardUserDefaults] setObject:self.userPhone forKey:@"userPhone"];
+
+    [[NSUserDefaults standardUserDefaults] setObject:self.userType forKey:@"userType"];
+
+    [[NSUserDefaults standardUserDefaults] setObject:self.userNick forKey:@"userNick"];
+}
+
+- (void)getInfoFromLocal{
+    self.userName = [[NSUserDefaults standardUserDefaults] objectForKey:@"userName"];
+    self.userAccount = [[NSUserDefaults standardUserDefaults] objectForKey:@"userAccount"];
+
+    self.userPassword = [[NSUserDefaults standardUserDefaults] objectForKey:@"userPassword"];
+
+    self.userPhone = [[NSUserDefaults standardUserDefaults] objectForKey:@"userPhone"];
+    self.userType = [[NSUserDefaults standardUserDefaults] objectForKey:@"userType"];
+    self.userNick = [[NSUserDefaults standardUserDefaults] objectForKey:@"userNick"];
+
+}
 
 @end
