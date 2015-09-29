@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01583F231BBA62CC00A98FC1 /* AppointmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01583F221BBA62CC00A98FC1 /* AppointmentStoryboard.storyboard */; };
+		01583F261BBA695900A98FC1 /* AppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01583F251BBA695900A98FC1 /* AppointmentCell.m */; };
+		01583F291BBA705700A98FC1 /* SubmitApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01583F281BBA705700A98FC1 /* SubmitApplyVC.m */; };
 		01657DE81BB9174B0056835C /* ActivityListcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01657DE71BB9174B0056835C /* ActivityListcell.m */; };
 		01657DEB1BB918360056835C /* KGActivityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01657DEA1BB918360056835C /* KGActivityDetailVC.m */; };
 		01657DEE1BB9248E0056835C /* ActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01657DED1BB9248E0056835C /* ActivityItem.m */; };
@@ -87,6 +90,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01583F221BBA62CC00A98FC1 /* AppointmentStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppointmentStoryboard.storyboard; sourceTree = "<group>"; };
+		01583F241BBA695900A98FC1 /* AppointmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppointmentCell.h; path = agrBankWallet/Class/Form/controller/AppointmentCell.h; sourceTree = SOURCE_ROOT; };
+		01583F251BBA695900A98FC1 /* AppointmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppointmentCell.m; path = agrBankWallet/Class/Form/controller/AppointmentCell.m; sourceTree = SOURCE_ROOT; };
+		01583F271BBA705700A98FC1 /* SubmitApplyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitApplyVC.h; sourceTree = "<group>"; };
+		01583F281BBA705700A98FC1 /* SubmitApplyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitApplyVC.m; sourceTree = "<group>"; };
+		01583F2B1BBA764D00A98FC1 /* KGPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGPrefixHeader.pch; sourceTree = "<group>"; };
 		01657DE61BB9174B0056835C /* ActivityListcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListcell.h; sourceTree = "<group>"; };
 		01657DE71BB9174B0056835C /* ActivityListcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListcell.m; sourceTree = "<group>"; };
 		01657DE91BB918360056835C /* KGActivityDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGActivityDetailVC.h; sourceTree = "<group>"; };
@@ -215,8 +224,11 @@
 		309098A31BB6FC5000C30BCE /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				01583F221BBA62CC00A98FC1 /* AppointmentStoryboard.storyboard */,
 				309098A61BB6FC7B00C30BCE /* KGFormVC.h */,
 				309098A71BB6FC7B00C30BCE /* KGFormVC.m */,
+				01583F271BBA705700A98FC1 /* SubmitApplyVC.h */,
+				01583F281BBA705700A98FC1 /* SubmitApplyVC.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -231,6 +243,8 @@
 		309098A51BB6FC6400C30BCE /* view */ = {
 			isa = PBXGroup;
 			children = (
+				01583F241BBA695900A98FC1 /* AppointmentCell.h */,
+				01583F251BBA695900A98FC1 /* AppointmentCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -282,6 +296,7 @@
 			children = (
 				8ED2DB391BB290BB0025D16C /* Info.plist */,
 				8ED2DB3A1BB290BB0025D16C /* main.m */,
+				01583F2B1BBA764D00A98FC1 /* KGPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -687,6 +702,7 @@
 				8ED2DC041BB3D2760025D16C /* jifenduihuan@2x.png in Resources */,
 				8ED2DBA81BB2A1020025D16C /* 3tagTabFindSelected@2x.png in Resources */,
 				8ED2DBAC1BB2A1020025D16C /* 3tagTabHomeSelected@2x.png in Resources */,
+				01583F231BBA62CC00A98FC1 /* AppointmentStoryboard.storyboard in Resources */,
 				8ED2DBB11BB2A1020025D16C /* 3tagTabMeSelected@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01583F291BBA705700A98FC1 /* SubmitApplyVC.m in Sources */,
 				8ED2DBCE1BB2A9DC0025D16C /* KGLoginVC.m in Sources */,
 				8ED2DB3E1BB290BB0025D16C /* AppDelegate.m in Sources */,
 				8ED2DB3B1BB290BB0025D16C /* main.m in Sources */,
@@ -714,6 +731,7 @@
 				8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */,
 				8ED2DB821BB298610025D16C /* KGCommonBaseNVC.m in Sources */,
 				8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */,
+				01583F261BBA695900A98FC1 /* AppointmentCell.m in Sources */,
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
 				8ED2DBCA1BB2A48A0025D16C /* RDVTabBarItem.m in Sources */,
 				01657DEB1BB918360056835C /* KGActivityDetailVC.m in Sources */,
@@ -834,6 +852,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/agrBankWallet/Class/Common/ThirdParty/AVOSClound",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/agrBankWallet/KGPrefixheader.pch";
 				INFOPLIST_FILE = agrBankWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -849,6 +868,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/agrBankWallet/Class/Common/ThirdParty/AVOSClound",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/agrBankWallet/KGPrefixheader.pch";
 				INFOPLIST_FILE = agrBankWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -33,13 +33,13 @@
                                                     <rect key="frame" x="15" y="10" width="58" height="58"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="活动名称" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i4-s0-nfH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="活动名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i4-s0-nfH">
                                                     <rect key="frame" x="85" y="10" width="220" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.21176470816135406" green="0.21176470816135406" blue="0.21176470816135406" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMy-iu-Mfv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="220" translatesAutoresizingMaskIntoConstraints="NO" id="HMy-iu-Mfv">
                                                     <rect key="frame" x="85" y="34" width="220" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.57647061347961426" green="0.57647061347961426" blue="0.57647061347961426" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,7 +51,6 @@
                                             <outlet property="contentlabel" destination="HMy-iu-Mfv" id="3Zi-Lg-LMu"/>
                                             <outlet property="nameLabel" destination="2i4-s0-nfH" id="HhE-ZN-uMU"/>
                                             <outlet property="picture" destination="9VQ-Ih-f1W" id="ovl-th-bmj"/>
-                                            <segue destination="iOQ-gJ-Itz" kind="push" id="Fb7-kG-y26"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,6 +71,9 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="iOQ-gJ-Itz" kind="push" identifier="PushActivityDetailVC" id="iNb-OY-cqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfa-Gw-Nz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +134,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843139999996" green="0.62352941179999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QRg-Dz-gs1" firstAttribute="top" secondItem="sf0-za-iSL" secondAttribute="bottom" id="8aq-Yk-zxq"/>
                             <constraint firstAttribute="trailing" secondItem="QRg-Dz-gs1" secondAttribute="trailing" id="CQd-dJ-v36"/>

@@ -41,7 +41,7 @@
         paragraphStyle.lineSpacing = 2;
         NSDictionary *attributes = @{NSParagraphStyleAttributeName : paragraphStyle, NSFontAttributeName : [UIFont systemFontOfSize:14], NSForegroundColorAttributeName : [UIColor blackColor]};
         textView.attributedText = [[NSAttributedString alloc] initWithString:_contentStr attributes:attributes];
-        CGSize textSize = [textView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, MAXFLOAT)];
+        CGSize textSize = [textView sizeThatFits:CGSizeMake(ScreenWidth - 20, MAXFLOAT)];
         return textSize.height;
     } else {
         return 100;
@@ -74,15 +74,15 @@
         NSDictionary *attributes = @{NSParagraphStyleAttributeName : paragraphStyle, NSFontAttributeName : [UIFont systemFontOfSize:14], NSForegroundColorAttributeName : [UIColor blackColor]};
         textView.attributedText = [[NSAttributedString alloc] initWithString:_contentStr attributes:attributes];
         //高度计算
-        CGSize textSize = [textView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width - 20, MAXFLOAT)];
-        
+        CGSize textSize = [textView sizeThatFits:CGSizeMake(ScreenWidth, MAXFLOAT)];
+
         textView.backgroundColor = [UIColor clearColor];
         textView.editable = NO;
         textView.scrollEnabled = NO;
         textView.frame = CGRectMake(10, 0, [UIScreen mainScreen].bounds.size.width - 20, textSize.height);
         [cell.contentView addSubview:textView];
     } else {
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 0, [UIScreen mainScreen].bounds.size.width - 20, 100)];
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 0, ScreenWidth - 20, 100)];
         imageView.backgroundColor = [UIColor clearColor];
         imageView.contentMode = UIViewContentModeCenter;
         imageView.image = [UIImage imageNamed:@"defaultMallImage"];
