@@ -15,6 +15,7 @@
 #import <AVOSCloud/AVOSCloud.h>
 
 #import "KGFormVC.h"
+#import "KGIntroVC.h"
 
 #define AVOSCloudAppID  @"jsxYdhFRa5VEH41xC8Rlpu24"
 #define AVOSCloudAppKey @"FqXa7pxKzxUewPaQxzY63Dz8"
@@ -46,7 +47,7 @@
     NSDictionary *imgDic4 = @{@"Default":[UIImage imageNamed:@"3tagTabMeNormal.png"],
                               @"Seleted":[UIImage imageNamed:@"3tagTabMeSelected.png"]};
     
-    KGCommonBaseVC *introductionVC = [[KGCommonBaseVC alloc] init];
+    KGIntroVC *introductionVC = [[KGIntroVC alloc] init];
     KGCommonBaseNVC *nvc1 = [[KGCommonBaseNVC alloc] initWithRootViewController:introductionVC];
     
     KGCommonBaseVC *activityVC = [[KGCommonBaseVC alloc] init];

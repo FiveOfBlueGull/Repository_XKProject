@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30027DDA1BBC62EC00CB93E9 /* KGIntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */; };
+		30027DDD1BBC667000CB93E9 /* KGIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DDC1BBC667000CB93E9 /* KGIntroCell.m */; };
 		309098A81BB6FC7B00C30BCE /* KGFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 309098A71BB6FC7B00C30BCE /* KGFormVC.m */; };
 		8ED2DB3B1BB290BB0025D16C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DB3A1BB290BB0025D16C /* main.m */; };
 		8ED2DB3E1BB290BB0025D16C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DB3D1BB290BB0025D16C /* AppDelegate.m */; };
@@ -82,6 +84,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30027DD81BBC62EC00CB93E9 /* KGIntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGIntroVC.h; sourceTree = "<group>"; };
+		30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGIntroVC.m; sourceTree = "<group>"; };
+		30027DDB1BBC667000CB93E9 /* KGIntroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGIntroCell.h; sourceTree = "<group>"; };
+		30027DDC1BBC667000CB93E9 /* KGIntroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGIntroCell.m; sourceTree = "<group>"; };
 		309098A61BB6FC7B00C30BCE /* KGFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGFormVC.h; sourceTree = "<group>"; };
 		309098A71BB6FC7B00C30BCE /* KGFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGFormVC.m; sourceTree = "<group>"; };
 		8ED2DB351BB290BB0025D16C /* agrBankWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agrBankWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +194,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30027DD41BBC62A100CB93E9 /* introduction */ = {
+			isa = PBXGroup;
+			children = (
+				30027DD51BBC62B000CB93E9 /* controller */,
+				30027DD71BBC62C500CB93E9 /* model */,
+				30027DD61BBC62BB00CB93E9 /* view */,
+			);
+			path = introduction;
+			sourceTree = "<group>";
+		};
+		30027DD51BBC62B000CB93E9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				30027DD81BBC62EC00CB93E9 /* KGIntroVC.h */,
+				30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		30027DD61BBC62BB00CB93E9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				30027DDB1BBC667000CB93E9 /* KGIntroCell.h */,
+				30027DDC1BBC667000CB93E9 /* KGIntroCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		30027DD71BBC62C500CB93E9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		309098A21BB6FC3B00C30BCE /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +333,8 @@
 		8ED2DB5E1BB297050025D16C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				30027DD41BBC62A100CB93E9 /* introduction */,
 				309098A21BB6FC3B00C30BCE /* Form */,
-				8ED2DB721BB297050025D16C /* Introduction */,
 				8ED2DB5F1BB297050025D16C /* Activity */,
 				8ED2DB761BB297050025D16C /* UserCenter */,
 				8ED2DB631BB297050025D16C /* Common */,
@@ -376,37 +417,6 @@
 			sourceTree = "<group>";
 		};
 		8ED2DB6D1BB297050025D16C /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		8ED2DB721BB297050025D16C /* Introduction */ = {
-			isa = PBXGroup;
-			children = (
-				8ED2DB731BB297050025D16C /* controller */,
-				8ED2DB741BB297050025D16C /* model */,
-				8ED2DB751BB297050025D16C /* view */,
-			);
-			path = Introduction;
-			sourceTree = "<group>";
-		};
-		8ED2DB731BB297050025D16C /* controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		8ED2DB741BB297050025D16C /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		8ED2DB751BB297050025D16C /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -685,7 +695,9 @@
 				8ED2DB3E1BB290BB0025D16C /* AppDelegate.m in Sources */,
 				8ED2DB3B1BB290BB0025D16C /* main.m in Sources */,
 				8ED2DBDD1BB38E8D0025D16C /* KGUserCenterCell.m in Sources */,
+				30027DDD1BBC667000CB93E9 /* KGIntroCell.m in Sources */,
 				8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */,
+				30027DDA1BBC62EC00CB93E9 /* KGIntroVC.m in Sources */,
 				8ED2DB821BB298610025D16C /* KGCommonBaseNVC.m in Sources */,
 				8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */,
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
