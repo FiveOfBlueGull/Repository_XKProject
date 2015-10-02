@@ -48,7 +48,7 @@
     AVQuery *users = [[AVQuery alloc] initWithClassName:@"UserClass"];
     [users whereKey:@"userPhone" equalTo:userName];
     [users findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
+        if (!error && objects.count > 0) {
             AVObject *user = [objects firstObject];
             if ([user[@"userPassword"] isEqualToString:userPassword]) {
                 NSLog(@"%@",[user description]);

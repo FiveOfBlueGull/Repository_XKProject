@@ -10,4 +10,10 @@
 
 @interface KGRegisterVC : KGCommonBaseVC
 
+@property (nonatomic ,weak)IBOutlet UITextField *userNameTF;
+@property (nonatomic ,weak)IBOutlet UITextField *userPasswordTF;
+@property (nonatomic, weak)IBOutlet UITextField *userConfirmPasswordTF;
+
+- (IBAction)handleRegisterBtnAction:(id)sender;
+
 @end

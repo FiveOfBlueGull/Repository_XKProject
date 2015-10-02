@@ -7,9 +7,12 @@
 //
 
 #import "KGUserCenterVC.h"
-#import "KGUserCenterCell.h"
-#import "KGLoginVC.h"
-#import "KGCommonBaseNVC.h"
+#import "KGUserCenterCell.h"//
+
+#import "KGLoginVC.h"//
+#import "KGCommonBaseNVC.h"//
+#import "KGOrderListVC.h"//
+
 
 @interface KGUserCenterVC ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -97,6 +100,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%@",[indexPath description]);
+    if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:1]] == NSOrderedSame) {
+        KGOrderListVC *vc = [[KGOrderListVC alloc] initWithNibName:@"KGOrderListVC" bundle:nil customBackButton:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

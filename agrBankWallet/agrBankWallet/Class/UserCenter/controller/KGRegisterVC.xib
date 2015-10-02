@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KGRegisterVC">
             <connections>
+                <outlet property="userConfirmPasswordTF" destination="3Ev-JZ-rLv" id="vLF-Tz-jPQ"/>
+                <outlet property="userNameTF" destination="SSb-Wz-IvI" id="TZa-76-rmL"/>
+                <outlet property="userPasswordTF" destination="luv-fy-QSg" id="di1-Xg-QWZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,6 +38,9 @@
                     <state key="normal" title="注册">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="handleRegisterBtnAction:" destination="-1" eventType="touchUpInside" id="jmY-ba-vct"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

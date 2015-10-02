@@ -10,21 +10,67 @@
 
 @interface KGCommonBaseVC ()
 
+@property (nonatomic, assign)BOOL showingCustomBackButton;
+
 @end
 
 @implementation KGCommonBaseVC
+
+- (instancetype)initWithCustomBackButton:(BOOL)showing{
+    self = [super init];
+    if (self) {
+        self.showingCustomBackButton = showing;
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil customBackButton:(BOOL)showing{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.showingCustomBackButton = showing;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.globalDataModel = [GlobalDataModel shareInstance];
-    
     self.automaticallyAdjustsScrollViewInsets = NO;
+    [self setupLeftBarButtonItem];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark -- private 
+
+- (void)setupLeftBarButtonItem{
+    if (self.showingCustomBackButton) {
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backItemImage"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+        self.navigationItem.leftBarButtonItem = item;
+
+    }else{
+        self.navigationItem.hidesBackButton = YES;
+    }
+}
+
+- (void)goBack{
+    // override by subClass
+}
+
+#pragma mark -- public
+
+- (RDVTabBarController *)rootTabBarVC{
+    UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+    return (RDVTabBarController *)window.rootViewController;
+}
+
+- (UIWindow *)window{
+    return [[[UIApplication sharedApplication] delegate] window];
 }
 
 /*
