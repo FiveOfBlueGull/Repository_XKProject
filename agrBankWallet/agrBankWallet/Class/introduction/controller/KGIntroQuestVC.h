@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KGCommonBaseVC.h"
 
-@interface KGIntroQuestVC : UIViewController
+@interface KGIntroQuestVC : KGCommonBaseVC
+
+@property (nonatomic,strong) NSString *introId;
 
 @end

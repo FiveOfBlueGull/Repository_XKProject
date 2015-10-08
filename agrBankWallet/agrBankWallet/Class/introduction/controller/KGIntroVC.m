@@ -7,6 +7,9 @@
 //
 
 #import "KGIntroVC.h"
+#import "KGIntroDetailVC.h"
+#import "KGIntroCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface KGIntroVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -33,7 +36,7 @@
     self.navigationItem.title = @"介绍";
     [self.view addSubview:self.tableView];
     
-    AVQuery *query = [[AVQuery alloc] initWithClassName:@"ShopClass"];
+    AVQuery *query = [[AVQuery alloc] initWithClassName:@"IntroClass"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if(!error){
@@ -61,6 +64,8 @@
         _tableView= [[UITableView alloc] initWithFrame:CGRectMake(0, 64,self.view.frame.size.width, self.view.frame.size.height - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.tableFooterView = [[UIView alloc] init];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }
@@ -74,18 +79,37 @@
     return self.dataSource.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    AVObject *obj = [self.dataSource objectAtIndex:indexPath.row];
+    NSString *cellStyle = obj[@"introCellType"];
+    if ([cellStyle isEqualToString:@"1"]) {
+        
+        return KFullHeight;
+    }
+    return KHalfHeight;
+
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *cellIdent = @"introCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdent];
+    KGIntroCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdent];
     if (!cell) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdent];
+        cell = [[KGIntroCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdent];
     }
     
     AVObject *obj = [self.dataSource objectAtIndex:indexPath.row];
-    cell.textLabel.text = obj[@"shopName"];
-    cell.detailTextLabel.text = obj[@"shopAddress"];
+    
+    NSString *cellStyle = obj[@"introCellType"];
+    NSString *imageUrl = obj[@"introImageUrl"];
+    cell.aTitleLabel.text = obj[@"introName"];
+    [cell.aImageView  sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:nil];
+    cell.aStyle = (CellStyle)[cellStyle integerValue];
+//    if (indexPath.row %2 == 1) {
+//        cell.backgroundColor = [UIColor blueColor];
+//
+//    }
     return cell;
 }
 
@@ -93,8 +117,19 @@
 #pragma mark -- tablview delegate--
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSLog(@"%zd",indexPath.row);
+    
+    AVObject *obj = [self.dataSource objectAtIndex:indexPath.row];
+    NSString *urlStr = obj[@"introDetailUrl"];
+    KGIntroDetailVC *detailVC = [[KGIntroDetailVC alloc] init];
+    detailVC.urlString = urlStr;
+    detailVC.navigationItem.title = obj[@"introName"];
+    [detailVC setHidesBottomBarWhenPushed:YES];
+    detailVC.introId = obj.objectId;
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
 //    UIImage *image = [UIImage imageNamed:@"gaosibeijing@2x"];
 //    NSData *data = UIImageJPEGRepresentation(image, 0.8);
 //    AVFile *file = [AVFile fileWithData:data];

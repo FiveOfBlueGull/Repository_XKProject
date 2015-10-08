@@ -10,6 +10,7 @@
 
 @interface GlobalDataModel : NSObject
 
+
 @property (nonatomic, copy)NSString *userName;       /**< 用户名 */
 
 @property (nonatomic, copy)NSString *userAccount;    /**< 用户积分 */

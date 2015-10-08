@@ -32,10 +32,21 @@
     return self;
 }
 
+- (instancetype)init{
+    
+    if (self = [super init]) {
+        
+        self.showingCustomBackButton = YES;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.globalDataModel = [GlobalDataModel shareInstance];
+    self.view.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1];
+
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupLeftBarButtonItem];
 }

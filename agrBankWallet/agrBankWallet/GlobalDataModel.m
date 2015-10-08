@@ -68,6 +68,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:self.userType forKey:@"userType"];
 
     [[NSUserDefaults standardUserDefaults] setObject:self.userNick forKey:@"userNick"];
+
+    
 }
 
 - (void)getInfoFromLocal{
@@ -79,6 +81,7 @@
     self.userPhone = [[NSUserDefaults standardUserDefaults] objectForKey:@"userPhone"];
     self.userType = [[NSUserDefaults standardUserDefaults] objectForKey:@"userType"];
     self.userNick = [[NSUserDefaults standardUserDefaults] objectForKey:@"userNick"];
+
 
 }
 
