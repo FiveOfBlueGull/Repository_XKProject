@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KGCommonBaseVC.h"
 
-@interface KGActivityListVC : UIViewController
+@interface KGActivityListVC : KGCommonBaseVC
 
 @end
