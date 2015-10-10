@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016393491BC78CBB0052A6A5 /* AppointmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016393461BC78CBB0052A6A5 /* AppointmentStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
-		0163934A1BC78CBB0052A6A5 /* SubmitApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393481BC78CBB0052A6A5 /* SubmitApplyVC.m */; settings = {ASSET_TAGS = (); }; };
-		0163934D1BC78CE20052A6A5 /* AppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163934C1BC78CE20052A6A5 /* AppointmentCell.m */; settings = {ASSET_TAGS = (); }; };
-		016393561BC78FD90052A6A5 /* ActivityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0163934F1BC78FD90052A6A5 /* ActivityStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
-		016393571BC78FD90052A6A5 /* KGActivityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393511BC78FD90052A6A5 /* KGActivityDetailVC.m */; settings = {ASSET_TAGS = (); }; };
-		016393581BC78FD90052A6A5 /* KGActivityListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393531BC78FD90052A6A5 /* KGActivityListVC.m */; settings = {ASSET_TAGS = (); }; };
-		016393591BC78FD90052A6A5 /* KGActivityWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393551BC78FD90052A6A5 /* KGActivityWebVC.m */; settings = {ASSET_TAGS = (); }; };
-		0163935C1BC78FE80052A6A5 /* ActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163935B1BC78FE80052A6A5 /* ActivityItem.m */; settings = {ASSET_TAGS = (); }; };
-		0163935F1BC78FF40052A6A5 /* ActivityListcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163935E1BC78FF40052A6A5 /* ActivityListcell.m */; settings = {ASSET_TAGS = (); }; };
+		012506711BC8E6A600EF5D40 /* MyAppointmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 012506701BC8E6A600EF5D40 /* MyAppointmentVC.m */; };
+		012506741BC8E6EA00EF5D40 /* MyAppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 012506731BC8E6EA00EF5D40 /* MyAppointmentCell.m */; };
+		012506761BC8E78800EF5D40 /* AppointmentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012506751BC8E78800EF5D40 /* AppointmentStoryboard.storyboard */; };
+		0163934A1BC78CBB0052A6A5 /* SubmitApplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393481BC78CBB0052A6A5 /* SubmitApplyVC.m */; };
+		0163934D1BC78CE20052A6A5 /* AppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163934C1BC78CE20052A6A5 /* AppointmentCell.m */; };
+		016393561BC78FD90052A6A5 /* ActivityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0163934F1BC78FD90052A6A5 /* ActivityStoryboard.storyboard */; };
+		016393571BC78FD90052A6A5 /* KGActivityDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393511BC78FD90052A6A5 /* KGActivityDetailVC.m */; };
+		016393581BC78FD90052A6A5 /* KGActivityListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393531BC78FD90052A6A5 /* KGActivityListVC.m */; };
+		016393591BC78FD90052A6A5 /* KGActivityWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016393551BC78FD90052A6A5 /* KGActivityWebVC.m */; };
+		0163935C1BC78FE80052A6A5 /* ActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163935B1BC78FE80052A6A5 /* ActivityItem.m */; };
+		0163935F1BC78FF40052A6A5 /* ActivityListcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0163935E1BC78FF40052A6A5 /* ActivityListcell.m */; };
 		30027DDA1BBC62EC00CB93E9 /* KGIntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */; };
 		30027DDD1BBC667000CB93E9 /* KGIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DDC1BBC667000CB93E9 /* KGIntroCell.m */; };
 		309098A81BB6FC7B00C30BCE /* KGFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 309098A71BB6FC7B00C30BCE /* KGFormVC.m */; };
@@ -112,7 +114,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016393461BC78CBB0052A6A5 /* AppointmentStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppointmentStoryboard.storyboard; sourceTree = "<group>"; };
+		0125066F1BC8E6A600EF5D40 /* MyAppointmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppointmentVC.h; sourceTree = "<group>"; };
+		012506701BC8E6A600EF5D40 /* MyAppointmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppointmentVC.m; sourceTree = "<group>"; };
+		012506721BC8E6EA00EF5D40 /* MyAppointmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppointmentCell.h; sourceTree = "<group>"; };
+		012506731BC8E6EA00EF5D40 /* MyAppointmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppointmentCell.m; sourceTree = "<group>"; };
+		012506751BC8E78800EF5D40 /* AppointmentStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppointmentStoryboard.storyboard; sourceTree = "<group>"; };
 		016393471BC78CBB0052A6A5 /* SubmitApplyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitApplyVC.h; sourceTree = "<group>"; };
 		016393481BC78CBB0052A6A5 /* SubmitApplyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitApplyVC.m; sourceTree = "<group>"; };
 		0163934B1BC78CE20052A6A5 /* AppointmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentCell.h; sourceTree = "<group>"; };
@@ -332,7 +338,9 @@
 		309098A31BB6FC5000C30BCE /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				016393461BC78CBB0052A6A5 /* AppointmentStoryboard.storyboard */,
+				012506751BC8E78800EF5D40 /* AppointmentStoryboard.storyboard */,
+				0125066F1BC8E6A600EF5D40 /* MyAppointmentVC.h */,
+				012506701BC8E6A600EF5D40 /* MyAppointmentVC.m */,
 				309098A61BB6FC7B00C30BCE /* KGFormVC.h */,
 				309098A71BB6FC7B00C30BCE /* KGFormVC.m */,
 				016393471BC78CBB0052A6A5 /* SubmitApplyVC.h */,
@@ -351,6 +359,8 @@
 		309098A51BB6FC6400C30BCE /* view */ = {
 			isa = PBXGroup;
 			children = (
+				012506721BC8E6EA00EF5D40 /* MyAppointmentCell.h */,
+				012506731BC8E6EA00EF5D40 /* MyAppointmentCell.m */,
 				0163934B1BC78CE20052A6A5 /* AppointmentCell.h */,
 				0163934C1BC78CE20052A6A5 /* AppointmentCell.m */,
 			);
@@ -788,7 +798,6 @@
 				8ED2DBB51BB2A1020025D16C /* 3tagTabPicSelected@3x.png in Resources */,
 				016393561BC78FD90052A6A5 /* ActivityStoryboard.storyboard in Resources */,
 				8ED2DBAD1BB2A1020025D16C /* 3tagTabHomeSelected@3x.png in Resources */,
-				016393491BC78CBB0052A6A5 /* AppointmentStoryboard.storyboard in Resources */,
 				8ED2DBCF1BB2A9DC0025D16C /* KGLoginVC.xib in Resources */,
 				8ED2DC011BB3D2760025D16C /* huobiduihuan@2x.png in Resources */,
 				8ED2DBDE1BB38E8D0025D16C /* KGUserCenterCell.xib in Resources */,
@@ -823,6 +832,7 @@
 				8ED2DC041BB3D2760025D16C /* jifenduihuan@2x.png in Resources */,
 				8ED2DBA81BB2A1020025D16C /* 3tagTabFindSelected@2x.png in Resources */,
 				8ED2DBAC1BB2A1020025D16C /* 3tagTabHomeSelected@2x.png in Resources */,
+				012506761BC8E78800EF5D40 /* AppointmentStoryboard.storyboard in Resources */,
 				8ED2DBB11BB2A1020025D16C /* 3tagTabMeSelected@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,6 +868,7 @@
 				30027DDA1BBC62EC00CB93E9 /* KGIntroVC.m in Sources */,
 				30B4FCD61BC14C7000D100F8 /* KGIntroQuestVC.m in Sources */,
 				8ED2DB821BB298610025D16C /* KGCommonBaseNVC.m in Sources */,
+				012506741BC8E6EA00EF5D40 /* MyAppointmentCell.m in Sources */,
 				8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */,
 				016393581BC78FD90052A6A5 /* KGActivityListVC.m in Sources */,
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
@@ -871,6 +882,7 @@
 				30B4FCFD1BC15C9F00D100F8 /* SDWebImageDecoder.m in Sources */,
 				30B4FCFF1BC15C9F00D100F8 /* SDWebImageDownloaderOperation.m in Sources */,
 				8ED2DBC81BB2A48A0025D16C /* RDVTabBar.m in Sources */,
+				012506711BC8E6A600EF5D40 /* MyAppointmentVC.m in Sources */,
 				8ED2DB881BB29A420025D16C /* GlobalDataModel.m in Sources */,
 				0163934D1BC78CE20052A6A5 /* AppointmentCell.m in Sources */,
 				30B4FCF91BC15C9F00D100F8 /* MKAnnotationView+WebCache.m in Sources */,
