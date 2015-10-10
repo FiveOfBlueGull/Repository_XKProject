@@ -31,7 +31,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.title = @"预约";
-    _dataArray = [NSMutableArray arrayWithObjects:@"预约存款", @"预约取款", @"预约办卡", @"预约咨询", @"其他", nil];
+    _dataArray = [NSMutableArray arrayWithObjects:@"预约存款", @"预约取款", @"预约办卡", @"预约咨询", nil];
 }
 
 #pragma mark - TableViewDelegate
