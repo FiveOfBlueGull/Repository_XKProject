@@ -13,6 +13,7 @@
 #import "KGCommonBaseNVC.h"//
 //#import "KGOrderListVC.h"//
 
+#import "MyAppointmentVC.h"
 
 @interface KGUserCenterVC ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -103,6 +104,8 @@
     if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:1]] == NSOrderedSame) {
     //    KGOrderListVC *vc = [[KGOrderListVC alloc] initWithNibName:@"KGOrderListVC" bundle:nil customBackButton:YES];
      //   [self.navigationController pushViewController:vc animated:YES];
+        MyAppointmentVC *appointmentVC = [[UIStoryboard storyboardWithName:@"AppointmentStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"MyAppointmentVC"];
+        [self.navigationController pushViewController:appointmentVC animated:YES];
     }
 }
 
