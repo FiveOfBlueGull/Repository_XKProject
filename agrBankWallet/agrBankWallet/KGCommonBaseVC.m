@@ -41,6 +41,17 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    
+    if (self = [super initWithCoder:aDecoder]) {
+        
+        self.showingCustomBackButton = YES;
+    }
+    
+    return self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -60,8 +71,9 @@
 #pragma mark -- private 
 
 - (void)setupLeftBarButtonItem{
-    if (self.showingCustomBackButton) {
-        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backItemImage"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+    if (self.showingCustomBackButton && [[self.navigationController viewControllers] count] >= 2) {
+//        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backItemImage"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
         self.navigationItem.leftBarButtonItem = item;
 
     }else{

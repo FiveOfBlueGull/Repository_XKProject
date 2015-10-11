@@ -9,6 +9,7 @@
 #import "KGFormVC.h"
 #import "AppointmentCell.h"
 #import "SubmitApplyVC.h"
+#import "KGSubmitVC.h"
 
 @interface KGFormVC ()
 
@@ -31,7 +32,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.title = @"预约";
-    _dataArray = [NSMutableArray arrayWithObjects:@"预约存款", @"预约取款", @"预约办卡", @"预约咨询", nil];
+    _dataArray = [NSMutableArray arrayWithObjects:@"预约存款", @"预约取款", @"预约咨询", nil];
 }
 
 #pragma mark - TableViewDelegate
@@ -77,9 +78,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"PushSubmitApplyVC"]) {
         UIButton *_button = (UIButton *)sender;
-        SubmitApplyVC *_applyVC = segue.destinationViewController;
-        _applyVC.applyType = _dataArray[_button.tag - 500];
+       // SubmitApplyVC *_applyVC = segue.destinationViewController;
+      //  _applyVC.applyType = _dataArray[_button.tag - 500];s
+        KGSubmitVC *aVC = segue.destinationViewController;
+        aVC.type =  (ApplyType)_button.tag - 500;
+
+        
     }
+
+//    KGSubmitVC *aVC = [[KGSubmitVC alloc] init];
+//   aVC.type =  (ApplyType)_button.tag - 500;
+//    self.navigationController
 }
 
 @end

@@ -14,6 +14,10 @@
     // Initialization code
     _nameBtn.layer.borderColor = UIColorFromRGB(0xea8010).CGColor;
 }
+- (IBAction)btnAction:(id)sender {
+    
+    
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

@@ -40,6 +40,9 @@
 		30B4FD071BC15C9F00D100F8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4FCF61BC15C9F00D100F8 /* UIImageView+WebCache.m */; };
 		30B4FD081BC15C9F00D100F8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4FCF81BC15C9F00D100F8 /* UIView+WebCacheOperation.m */; };
 		30B4FD0B1BC182AD00D100F8 /* KGIntroQACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B4FD0A1BC182AD00D100F8 /* KGIntroQACell.m */; };
+		30D702191BCA9D92007B8063 /* KGSubmitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D702181BCA9D92007B8063 /* KGSubmitVC.m */; };
+		30D7021C1BCAB1EB007B8063 /* KGInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7021B1BCAB1EB007B8063 /* KGInputVC.m */; };
+		30D7021F1BCACADE007B8063 /* FormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7021E1BCACADE007B8063 /* FormModel.m */; };
 		8E3B6EE51BCA3D25002B8C14 /* KGRateExchangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDA1BCA3D25002B8C14 /* KGRateExchangeVC.m */; };
 		8E3B6EE61BCA3D25002B8C14 /* KGRateExchangeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDB1BCA3D25002B8C14 /* KGRateExchangeVC.xib */; };
 		8E3B6EE71BCA3D25002B8C14 /* KGVoucherDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDD1BCA3D25002B8C14 /* KGVoucherDetailVC.m */; };
@@ -194,6 +197,12 @@
 		30B4FCF81BC15C9F00D100F8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		30B4FD091BC182AD00D100F8 /* KGIntroQACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGIntroQACell.h; sourceTree = "<group>"; };
 		30B4FD0A1BC182AD00D100F8 /* KGIntroQACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGIntroQACell.m; sourceTree = "<group>"; };
+		30D702171BCA9D92007B8063 /* KGSubmitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGSubmitVC.h; sourceTree = "<group>"; };
+		30D702181BCA9D92007B8063 /* KGSubmitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGSubmitVC.m; sourceTree = "<group>"; };
+		30D7021A1BCAB1EB007B8063 /* KGInputVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGInputVC.h; sourceTree = "<group>"; };
+		30D7021B1BCAB1EB007B8063 /* KGInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGInputVC.m; sourceTree = "<group>"; };
+		30D7021D1BCACADE007B8063 /* FormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormModel.h; sourceTree = "<group>"; };
+		30D7021E1BCACADE007B8063 /* FormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormModel.m; sourceTree = "<group>"; };
 		8E3B6ED91BCA3D25002B8C14 /* KGRateExchangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRateExchangeVC.h; sourceTree = "<group>"; };
 		8E3B6EDA1BCA3D25002B8C14 /* KGRateExchangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRateExchangeVC.m; sourceTree = "<group>"; };
 		8E3B6EDB1BCA3D25002B8C14 /* KGRateExchangeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRateExchangeVC.xib; sourceTree = "<group>"; };
@@ -381,6 +390,10 @@
 				309098A71BB6FC7B00C30BCE /* KGFormVC.m */,
 				016393471BC78CBB0052A6A5 /* SubmitApplyVC.h */,
 				016393481BC78CBB0052A6A5 /* SubmitApplyVC.m */,
+				30D702171BCA9D92007B8063 /* KGSubmitVC.h */,
+				30D702181BCA9D92007B8063 /* KGSubmitVC.m */,
+				30D7021A1BCAB1EB007B8063 /* KGInputVC.h */,
+				30D7021B1BCAB1EB007B8063 /* KGInputVC.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -388,6 +401,8 @@
 		309098A41BB6FC5B00C30BCE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				30D7021D1BCACADE007B8063 /* FormModel.h */,
+				30D7021E1BCACADE007B8063 /* FormModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -928,6 +943,7 @@
 				30B4FD051BC15C9F00D100F8 /* UIImage+WebP.m in Sources */,
 				30027DDD1BBC667000CB93E9 /* KGIntroCell.m in Sources */,
 				8E3B6EF61BCA3D68002B8C14 /* KGVoucherListCell.m in Sources */,
+				30D7021F1BCACADE007B8063 /* FormModel.m in Sources */,
 				8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */,
 				30B4FD071BC15C9F00D100F8 /* UIImageView+WebCache.m in Sources */,
 				8E3B6EE91BCA3D25002B8C14 /* KGVoucherListVC.m in Sources */,
@@ -939,6 +955,7 @@
 				012506741BC8E6EA00EF5D40 /* MyAppointmentCell.m in Sources */,
 				8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */,
 				016393581BC78FD90052A6A5 /* KGActivityListVC.m in Sources */,
+				30D7021C1BCAB1EB007B8063 /* KGInputVC.m in Sources */,
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
 				016393571BC78FD90052A6A5 /* KGActivityDetailVC.m in Sources */,
 				8E3B6EF81BCA3D68002B8C14 /* KGOrderListCell.m in Sources */,
@@ -957,6 +974,7 @@
 				0163934D1BC78CE20052A6A5 /* AppointmentCell.m in Sources */,
 				30B4FCF91BC15C9F00D100F8 /* MKAnnotationView+WebCache.m in Sources */,
 				30B4FCFC1BC15C9F00D100F8 /* SDWebImageCompat.m in Sources */,
+				30D702191BCA9D92007B8063 /* KGSubmitVC.m in Sources */,
 				30B4FD021BC15C9F00D100F8 /* UIButton+WebCache.m in Sources */,
 				30B4FD0B1BC182AD00D100F8 /* KGIntroQACell.m in Sources */,
 				0163934A1BC78CBB0052A6A5 /* SubmitApplyVC.m in Sources */,

@@ -30,11 +30,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.webView];
+    [self.rootTabBarVC setTabBarHidden:YES animated:YES];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
  
     [self.view addSubview:self.aButton];
+    
+
+
 }
 
+
+- (void)goBack{
+    
+    [self.rootTabBarVC setTabBarHidden:NO animated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 #pragma mark- getter -- 
 
 - (UIWebView *)webView{
@@ -55,7 +65,7 @@
     if (!_aButton) {
         _aButton =  [UIButton buttonWithType:UIButtonTypeCustom];
         
-        _aButton.frame  = CGRectMake(0, self.view.frame.size.height - 40 - 49, ScreenWidth, 40);
+        _aButton.frame  = CGRectMake(0, self.view.frame.size.height - 40, ScreenWidth, 40);
         _aButton.backgroundColor = [UIColor orangeColor];
         [_aButton setTitle:@"答题赢取积分" forState:UIControlStateNormal];
         [_aButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
