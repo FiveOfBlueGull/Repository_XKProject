@@ -6,9 +6,14 @@
 //  Copyright (c) 2015年 system. All rights reserved.
 //
 
+
+#define kShouldRefreshUserInfoNotification @"kShouldRefreshUserInfoNotification"
+
 #import <Foundation/Foundation.h>
 
 @interface GlobalDataModel : NSObject
+
+@property (nonatomic, copy)NSString *userObjectID;    /**< objectId */
 
 @property (nonatomic, copy)NSString *userName;       /**< 用户名 */
 

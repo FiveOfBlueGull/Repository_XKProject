@@ -44,6 +44,7 @@
     self.userPhone = @"";
     self.userType = @(-1);
     self.userNick = @"";
+    self.userObjectID = @"";
     [self saveInfoToLocal];
 }
 
@@ -54,6 +55,7 @@
     self.userPhone = info[@"userPhone"];
     self.userType = info[@"userType"];
     self.userNick = info[@"userNick"];
+    self.userObjectID = info[@"userObjectID"];
     [self saveInfoToLocal];
 }
 
@@ -68,6 +70,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:self.userType forKey:@"userType"];
 
     [[NSUserDefaults standardUserDefaults] setObject:self.userNick forKey:@"userNick"];
+    [[NSUserDefaults standardUserDefaults] setObject:self.userObjectID forKey:@"userObjectID"];
+
 }
 
 - (void)getInfoFromLocal{
@@ -79,6 +83,8 @@
     self.userPhone = [[NSUserDefaults standardUserDefaults] objectForKey:@"userPhone"];
     self.userType = [[NSUserDefaults standardUserDefaults] objectForKey:@"userType"];
     self.userNick = [[NSUserDefaults standardUserDefaults] objectForKey:@"userNick"];
+    self.userObjectID = [[NSUserDefaults standardUserDefaults] objectForKey:@"userObjectID"];
+
 
 }
 

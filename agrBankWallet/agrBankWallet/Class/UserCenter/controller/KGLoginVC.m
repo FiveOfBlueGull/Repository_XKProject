@@ -74,7 +74,8 @@
                                                    @"userPassword":user[@"userPassword"],
                                                    @"userNick":user[@"userNick"],
                                                    @"userType":user[@"userType"],
-                                                   @"userPhone":user[@"userPhone"]}];
+                                                   @"userPhone":user[@"userPhone"],
+                                                   @"userObjectID":user[@"objectId"]}];
     [self.navigationController dismissViewControllerAnimated:YES completion:^{
         
     }];

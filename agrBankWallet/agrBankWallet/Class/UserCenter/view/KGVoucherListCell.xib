@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="KGVoucherListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youhuiquan_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="okW-cC-slr">
+                        <rect key="frame" x="0.0" y="0.0" width="83" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="LfU-Xa-vSI"/>
+                            <constraint firstAttribute="height" constant="69" id="qV2-ih-fW7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="197" placeholderIntrinsicHeight="33" text="活动名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBK-10-y9h">
+                        <rect key="frame" x="86" y="0.0" width="197" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" text="店铺名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPL-c6-hbn">
+                        <rect key="frame" x="86" y="35" width="197" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiaozhuan_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="psk-vM-tfZ">
+                        <rect key="frame" x="283" y="17" width="37" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="1JV-PS-V6r"/>
+                            <constraint firstAttribute="height" constant="35" id="uf6-Ib-vsG"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yishiyong.png" translatesAutoresizingMaskIntoConstraints="NO" id="zEW-5n-KgH">
+                        <rect key="frame" x="0.0" y="0.0" width="42" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="j7r-kk-DQG"/>
+                            <constraint firstAttribute="width" constant="42" id="ned-dC-u0V"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XPL-c6-hbn" firstAttribute="height" secondItem="fBK-10-y9h" secondAttribute="height" id="1w6-k0-d8a"/>
+                    <constraint firstAttribute="centerY" secondItem="psk-vM-tfZ" secondAttribute="centerY" id="CQg-T0-VsL"/>
+                    <constraint firstItem="okW-cC-slr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FsN-1u-Zoq"/>
+                    <constraint firstAttribute="centerY" secondItem="okW-cC-slr" secondAttribute="centerY" id="Iwu-qp-cN9"/>
+                    <constraint firstItem="zEW-5n-KgH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KiP-VQ-yAP"/>
+                    <constraint firstAttribute="bottom" secondItem="XPL-c6-hbn" secondAttribute="bottom" id="Llo-GC-gOO"/>
+                    <constraint firstItem="fBK-10-y9h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MJn-Dy-e7C"/>
+                    <constraint firstItem="XPL-c6-hbn" firstAttribute="top" secondItem="fBK-10-y9h" secondAttribute="bottom" id="Ze7-31-Pyl"/>
+                    <constraint firstItem="psk-vM-tfZ" firstAttribute="leading" secondItem="XPL-c6-hbn" secondAttribute="trailing" id="a1j-Rc-me1"/>
+                    <constraint firstItem="XPL-c6-hbn" firstAttribute="leading" secondItem="okW-cC-slr" secondAttribute="trailing" constant="3" id="eDR-ET-uOX"/>
+                    <constraint firstItem="zEW-5n-KgH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iUG-99-uCM"/>
+                    <constraint firstItem="psk-vM-tfZ" firstAttribute="leading" secondItem="fBK-10-y9h" secondAttribute="trailing" id="oLZ-Ps-Bux"/>
+                    <constraint firstItem="fBK-10-y9h" firstAttribute="leading" secondItem="okW-cC-slr" secondAttribute="trailing" constant="3" id="swh-Zm-chG"/>
+                    <constraint firstAttribute="trailing" secondItem="psk-vM-tfZ" secondAttribute="trailing" id="yzE-TU-2bp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityNameLbl" destination="fBK-10-y9h" id="Hag-1h-You"/>
+                <outlet property="bgImageView" destination="okW-cC-slr" id="pjj-Ly-VwP"/>
+                <outlet property="leftImageView" destination="zEW-5n-KgH" id="mSL-gk-UHD"/>
+                <outlet property="shopNameLbl" destination="XPL-c6-hbn" id="7SO-KU-da0"/>
+            </connections>
+            <point key="canvasLocation" x="153" y="262"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tiaozhuan_2.png" width="20" height="20"/>
+        <image name="yishiyong.png" width="40" height="40"/>
+        <image name="youhuiquan_bg.png" width="862" height="520"/>
+    </resources>
+</document>

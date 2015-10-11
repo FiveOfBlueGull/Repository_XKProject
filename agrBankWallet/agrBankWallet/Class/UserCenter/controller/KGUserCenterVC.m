@@ -12,7 +12,8 @@
 #import "KGLoginVC.h"//
 #import "KGCommonBaseNVC.h"//
 #import "KGOrderListVC.h"//
-
+#import "KGVoucherListVC.h"
+#import "KGRateExchangeVC.h"
 
 @interface KGUserCenterVC ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -38,6 +39,7 @@
                                                            @[@"yuyue",@"youhuiquan"],
                                                            @[@"huilvhuansuan",@"cunkuanhuansuan"]]];
     [self checkLogin];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshUserInfo) name:kShouldRefreshUserInfoNotification object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -63,6 +65,32 @@
             
         }];
     }
+}
+
+- (void)refreshUserInfo{
+    AVQuery *users = [[AVQuery alloc] initWithClassName:@"UserClass"];
+    [users whereKey:@"userPhone" equalTo:self.globalDataModel.userPhone];
+    [users findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error && objects.count > 0) {
+            AVObject *user = [objects firstObject];
+            [self didGetUserInfo:user];
+        }else{
+            
+        }
+    }];
+
+}
+
+- (void)didGetUserInfo:(AVObject *)user{
+    [self.globalDataModel didLoginWithReturnInfo:@{@"userName":user[@"userName"],
+                                                   @"userAccount":user[@"userAccount"],
+                                                   @"userPassword":user[@"userPassword"],
+                                                   @"userNick":user[@"userNick"],
+                                                   @"userType":user[@"userType"],
+                                                   @"userPhone":user[@"userPhone"],
+                                                   @"userObjectID":user[@"objectId"]}];
+    self.userNameLbl.text = self.globalDataModel.userName;
+    self.userAccountLbl.text = [NSString stringWithFormat:@"%@积分",self.globalDataModel.userAccount];
 }
 
 #pragma mark -- tableView datasource --
@@ -102,6 +130,12 @@
     NSLog(@"%@",[indexPath description]);
     if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:1]] == NSOrderedSame) {
         KGOrderListVC *vc = [[KGOrderListVC alloc] initWithNibName:@"KGOrderListVC" bundle:nil customBackButton:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if([indexPath compare:[NSIndexPath indexPathForRow:1 inSection:1]] == NSOrderedSame){
+        KGVoucherListVC *vc = [[KGVoucherListVC alloc] initWithNibName:@"KGVoucherListVC" bundle:nil customBackButton:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:2]] == NSOrderedSame){
+        KGRateExchangeVC *vc = [[KGRateExchangeVC alloc]  initWithNibName:@"KGRateExchangeVC" bundle:nil customBackButton:YES];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

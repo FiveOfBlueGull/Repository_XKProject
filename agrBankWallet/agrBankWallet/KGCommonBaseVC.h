@@ -40,5 +40,9 @@
  *  @return <#return value description#>
  */
 - (instancetype)initWithCustomBackButton:(BOOL)showing;
+/**
+ *  点击会退按钮 pop/dismiss VC
+ */
+- (void)goBack;
 
 @end
