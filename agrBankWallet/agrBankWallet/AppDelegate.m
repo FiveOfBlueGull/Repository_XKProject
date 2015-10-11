@@ -50,10 +50,10 @@
     KGIntroVC *introductionVC = [[KGIntroVC alloc] init];
     KGCommonBaseNVC *nvc1 = [[KGCommonBaseNVC alloc] initWithRootViewController:introductionVC];
     
-    KGCommonBaseVC *activityVC = [[KGCommonBaseVC alloc] init];
+    KGCommonBaseVC *activityVC = [UIStoryboard storyboardWithName:@"ActivityStoryboard" bundle:nil].instantiateInitialViewController;
     KGCommonBaseNVC *nvc2 = [[KGCommonBaseNVC alloc] initWithRootViewController:activityVC];
     
-    KGFormVC *formVC = [[KGFormVC alloc] init];
+    KGFormVC *formVC = [UIStoryboard storyboardWithName:@"AppointmentStoryboard" bundle:nil].instantiateInitialViewController;;
     KGCommonBaseNVC *nvc3 = [[KGCommonBaseNVC alloc] initWithRootViewController:formVC];
     
     KGCommonBaseVC *userCenterVC = [[KGUserCenterVC alloc] initWithNibName:@"KGUserCenterVC" bundle:nil];

@@ -9,11 +9,13 @@
 #import "KGUserCenterVC.h"
 #import "KGUserCenterCell.h"//
 
-#import "KGLoginVC.h"//
-#import "KGCommonBaseNVC.h"//
-#import "KGOrderListVC.h"//
-#import "KGVoucherListVC.h"
-#import "KGRateExchangeVC.h"
+#import "KGLoginVC.h"          //登录
+#import "KGCommonBaseNVC.h"    //
+#import "KGOrderListVC.h"      //预约列表
+#import "KGVoucherListVC.h"    //优惠券列表
+#import "KGRateExchangeVC.h"   //汇率换算
+#import "KGOrderListVC.h"      //订单列表
+#import "MyAppointmentVC.h"
 
 @interface KGUserCenterVC ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -128,7 +130,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%@",[indexPath description]);
-    if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:1]] == NSOrderedSame) {
+    if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:0]] == NSOrderedSame) {
+        //积分抽奖
+    }else if ([indexPath compare:[NSIndexPath indexPathForRow:1 inSection:0]] == NSOrderedSame){
+        //积分兑换
+    }else if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:1]] == NSOrderedSame) {
         KGOrderListVC *vc = [[KGOrderListVC alloc] initWithNibName:@"KGOrderListVC" bundle:nil customBackButton:YES];
         [self.navigationController pushViewController:vc animated:YES];
     }else if([indexPath compare:[NSIndexPath indexPathForRow:1 inSection:1]] == NSOrderedSame){
@@ -137,6 +143,12 @@
     }else if([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:2]] == NSOrderedSame){
         KGRateExchangeVC *vc = [[KGRateExchangeVC alloc]  initWithNibName:@"KGRateExchangeVC" bundle:nil customBackButton:YES];
         [self.navigationController pushViewController:vc animated:YES];
+        /*
+        MyAppointmentVC *appointmentVC = [[UIStoryboard storyboardWithName:@"AppointmentStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"MyAppointmentVC"];
+        [self.navigationController pushViewController:appointmentVC animated:YES];
+         */
+    }else if ([indexPath compare:[NSIndexPath indexPathForRow:1 inSection:2]] == NSOrderedSame){
+        //存款计算
     }
 }
 

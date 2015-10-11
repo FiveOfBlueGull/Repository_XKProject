@@ -14,34 +14,34 @@
 
 @interface KGCommonBaseVC : UIViewController
 
-@property (nonatomic, strong)GlobalDataModel   *globalDataModel;
+@property (nonatomic, strong)GlobalDataModel   *globalDataModel; /**< 全局的单例数据模型 */
 
-@property (nonatomic, weak)RDVTabBarController *rootTabBarVC;
+@property (nonatomic, weak)RDVTabBarController *rootTabBarVC;    /**< 根TabBarVC */
 
 @property (nonatomic, weak)UIWindow            *window;
 /**
- *  初始化方法
+ *  初始化方法－－适合于使用Xib的viewController
  *
- *  @param nibNameOrNil   <#nibNameOrNil description#>
- *  @param nibBundleOrNil <#nibBundleOrNil description#>
+ *  @param nibNameOrNil   nibNameOrNil
+ *  @param nibBundleOrNil nibNameOrNil
  *  @param showing        是否显示自定义回退按钮
  *
- *  @return <#return value description#>
+ *  @return 继承于KGCommonBaseVC的控制器
  */
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil
-                         bundle:(NSBundle *)nibBundleOrNil
+                         bundle:(NSBundle *)nibNameOrNil
                customBackButton:(BOOL)showing;
 
 /**
- *  初始化方法
+ *  初始化方法－－适合食用手写代码的ViewController
  *
  *  @param showing 是否显示自定义回退按钮
  *
- *  @return <#return value description#>
+ *  @return 继承于KGCommonBaseVC的控制器
  */
 - (instancetype)initWithCustomBackButton:(BOOL)showing;
 /**
- *  点击会退按钮 pop/dismiss VC
+ *  点击会退按钮 pop/dismiss VC 需之类重写
  */
 - (void)goBack;
 

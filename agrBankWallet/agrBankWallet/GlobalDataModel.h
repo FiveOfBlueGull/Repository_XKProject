@@ -13,6 +13,7 @@
 
 @interface GlobalDataModel : NSObject
 
+
 @property (nonatomic, copy)NSString *userObjectID;    /**< objectId */
 
 @property (nonatomic, copy)NSString *userName;       /**< 用户名 */
