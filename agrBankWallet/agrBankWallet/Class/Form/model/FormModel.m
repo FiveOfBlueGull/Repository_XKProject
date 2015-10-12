@@ -32,4 +32,10 @@
 }
 
 
+- (void)setValuesWithDictinoary:(NSDictionary *)dic{
+    
+    
+}
+
+
 @end

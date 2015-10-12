@@ -7,6 +7,8 @@
 //
 
 #import "KGCommonBaseVC.h"
+#import "FormModel.h"
+
 
 typedef enum{
     
@@ -20,5 +22,8 @@ typedef enum{
 
 
 @property (nonatomic,assign) ApplyType type;
+
+@property (nonatomic,strong) FormModel *formModel;
+
 
 @end

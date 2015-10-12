@@ -10,7 +10,6 @@
 
 #import "KGSubmitVC.h"
 #import "KGInputVC.h"
-#import "FormModel.h"
 #import "TRMenuPicker.h"
 #import "CreatQRImage.h"
 
@@ -25,7 +24,6 @@
 @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataSource;
 
-@property (nonatomic,strong) FormModel *formModel;
 
 @property (nonatomic,strong) NSArray *jumpArray; //需要弹出 视图的 选项 －
 

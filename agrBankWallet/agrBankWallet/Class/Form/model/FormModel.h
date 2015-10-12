@@ -29,10 +29,8 @@
 @property (nonatomic,strong) NSString *aItem; //咨询项目 
 
 
-//@property (nonatomic,strong) NSString *aName;
-//@property (nonatomic,strong) NSString *aName;
-//@property (nonatomic,strong) NSString *aName;
-//@property (nonatomic,strong) NSString *aName;
+
+- (void)setValuesWithDictinoary:(NSDictionary *)dic;
 
 
 @end
