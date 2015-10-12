@@ -110,8 +110,7 @@
     if ([segue.identifier isEqualToString:@"PushActivityWebVC"]) {
         KGActivityWebVC *_detailVC = segue.destinationViewController;
         AVObject *_object = _dataArray[_index.row];
-        _detailVC.name = [_object objectForKey:@"ActivityName"];
-        _detailVC.webUrl = [_object objectForKey:@"webUrl"];
+        _detailVC.targetObject = _object;
     }
 }
 

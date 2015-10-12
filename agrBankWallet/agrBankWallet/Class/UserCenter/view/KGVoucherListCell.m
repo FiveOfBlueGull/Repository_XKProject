@@ -7,6 +7,7 @@
 //
 
 #import "KGVoucherListCell.h"
+#import "UIImageView+WebCache.h"
 
 @implementation KGVoucherListCell
 
@@ -37,11 +38,21 @@
                activity:(AVObject *)activity
                    shop:(AVObject *)shop{
     self.leftImageView.hidden = [voucher[@"hasUsed"] integerValue] == 0;
+    self.leftImageView.hidden = NO;
+    
     if (activity) {
         self.activityNameLbl.text = activity[@"ActivityName"];
+        self.shopNameLbl.text = activity[@"ActivityDescription"];
+        self.bgImageView.contentMode = UIViewContentModeCenter;
+        [self.bgImageView sd_setImageWithURL:activity[@"pictureUrl"] placeholderImage:[UIImage imageNamed:@"defaultMallImage"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            if (image) {
+                self.bgImageView.contentMode = UIViewContentModeScaleAspectFit;
+            }
+        }];
     }
     if (shop) {
-        self.shopNameLbl.text = shop[@"shopName"];
+        self.activityNameLbl.text = shop[@"shopName"];
+        self.shopNameLbl.text = shop[@"shopAddress"];
     }
 }
 

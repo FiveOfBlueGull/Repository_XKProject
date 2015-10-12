@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.title = @"活动详情";
+    [self.rootTabBarVC setTabBarHidden:YES animated:YES];
 }
 
 #pragma mark - TableViewDelegate
