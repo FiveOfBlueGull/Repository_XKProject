@@ -8,7 +8,7 @@
 
 #import "KGRateExchangeVC.h"
 
-@interface KGRateExchangeVC ()<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface KGRateExchangeVC ()<UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong)NSMutableDictionary *rateDictionary;
 
@@ -32,6 +32,9 @@
                                                                           @"韩元":@(0.0054f),
                                                                           @"日元":@(0.053f),
                                                                           @"英镑":@(9.72f)}];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getResult) name:UIKeyboardDidHideNotification object:self.dollarTF];
+    self.currentRate = [[self.rateDictionary objectForKey:@"美元"] floatValue];
+    self.descriptionLbl.text = @"1美元＝6.37人民币,当前参考汇率6.37";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +55,7 @@
     float dollar = [self.dollarTF.text floatValue];
     float result = dollar * self.currentRate;
     self.rmbTF.text = [@(result) description];
+    self.descriptionLbl.text = [NSString stringWithFormat:@"1%@=%@人民币,当前参考汇率%@",text,[@(self.currentRate) description],[@(self.currentRate) description]];
 }
 
 #pragma mark -- 
@@ -81,6 +85,20 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
     return [[self.rateDictionary allKeys] objectAtIndex:row];
+}
+
+#pragma mark --
+
+- (void)getResult{
+    float dollar = [self.dollarTF.text floatValue];
+    float result = dollar * self.currentRate;
+    self.rmbTF.text = [@(result) description];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    float dollar = [self.dollarTF.text floatValue];
+    float result = dollar * self.currentRate;
+    self.rmbTF.text = [@(result) description];
 }
 
 @end

@@ -13,7 +13,7 @@
 #import "KGCommonBaseNVC.h"
 #import "KGUserCenterVC.h"
 #import <AVOSCloud/AVOSCloud.h>
-
+#import "IQKeyboardManager.h"
 #import "KGFormVC.h"
 #import "KGIntroVC.h"
 
@@ -34,6 +34,13 @@
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.window makeKeyAndVisible];
     
+    //键盘监听管理者
+    IQKeyboardManager *keyboardManager                  = [IQKeyboardManager sharedManager];
+    keyboardManager.enable                              = YES;
+    keyboardManager.shouldResignOnTouchOutside          = YES;
+    keyboardManager.shouldToolbarUsesTextFieldTintColor = YES;
+    keyboardManager.enableAutoToolbar                   = YES;
+
     
     [AVOSCloud setApplicationId:AVOSCloudAppID clientKey:AVOSCloudAppKey];
     

@@ -16,6 +16,7 @@
 #import "KGRateExchangeVC.h"   //汇率换算
 #import "KGOrderListVC.h"      //订单列表
 #import "MyAppointmentVC.h"
+#import "KGBankDepositVC.h"    //存款换算
 
 @interface KGUserCenterVC ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -149,6 +150,9 @@
          */
     }else if ([indexPath compare:[NSIndexPath indexPathForRow:1 inSection:2]] == NSOrderedSame){
         //存款计算
+        KGBankDepositVC *vc = [[KGBankDepositVC alloc] initWithNibName:@"KGBankDepositVC" bundle:nil customBackButton:YES];
+        [self.navigationController pushViewController:vc
+                                             animated:YES];
     }
 }
 
