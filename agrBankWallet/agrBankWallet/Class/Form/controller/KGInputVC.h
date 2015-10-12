@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    
+    EditTypeName = 0,
+    EditTypePhone = 1,
+    EditTypeIDCard = 2,
+    EditTypeAddress = 3,
+    EditTypeMoney = 4
+    
+}EditType;
+
 typedef void(^CallBack)(NSString *string);
 
 @interface KGInputVC : UIViewController
@@ -15,4 +25,6 @@ typedef void(^CallBack)(NSString *string);
 @property (nonatomic,strong) NSString *placeHolder;
 
 @property (nonatomic,copy) CallBack callBack;
+
+@property (nonatomic,assign) EditType editType;
 @end

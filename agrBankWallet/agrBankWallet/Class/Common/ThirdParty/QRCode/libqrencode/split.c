@@ -175,10 +175,10 @@ static int Split_eat8(const char *string, QRinput *input, QRencodeMode hint)
 {
 	const char *p, *q;
 	QRencodeMode mode;
-	int ret;
-	int run;
-	int dif;
-	int la, ln;
+	long ret;
+	long run;
+	long dif;
+	long la, ln;
 
 	la = QRspec_lengthIndicator(QR_MODE_AN, input->version);
 	ln = QRspec_lengthIndicator(QR_MODE_NUM, input->version);
