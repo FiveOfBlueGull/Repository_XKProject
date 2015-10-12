@@ -43,6 +43,7 @@
     
     
     AVQuery *query = [[AVQuery alloc] initWithClassName:@"FormClass"];
+    [query whereKey:@"FormUserID" equalTo:self.globalDataModel.userPhone];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         
         if(!error){
