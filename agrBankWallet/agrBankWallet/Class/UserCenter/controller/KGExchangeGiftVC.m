@@ -40,10 +40,10 @@
 
 
 - (void)goBack{
-    [self.rootTabBarVC setTabBarHidden:NO animated:YES];
     if ([[[self.navigationController viewControllers] firstObject] isKindOfClass:[self class]]) {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }else{
+        [self.rootTabBarVC setTabBarHidden:NO animated:YES];
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
