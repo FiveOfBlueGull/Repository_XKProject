@@ -10,6 +10,7 @@
 #define kShouldRefreshUserInfoNotification @"kShouldRefreshUserInfoNotification"
 
 #import <Foundation/Foundation.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 @interface GlobalDataModel : NSObject
 
@@ -46,5 +47,14 @@
  *  @param info 从数据库获取的用户信息
  */
 - (void)didLoginWithReturnInfo:(NSDictionary *)info;
+
+- (void)compareUserAccoutRemainWithCost:(NSInteger)cost
+                    moreOrEqualThanCost:(void(^)())success_more
+                           lessThanCost:(void(^)())success_less
+                         requestFailure:(void(^)())failure;
+- (void)reduceUserAccountWithCost:(NSInteger)cost
+                          success:(void(^)())success
+                    reduceFailure:(void(^)())reduceFailure
+                   requestFailure:(void(^)())requestFailure;
 
 @end

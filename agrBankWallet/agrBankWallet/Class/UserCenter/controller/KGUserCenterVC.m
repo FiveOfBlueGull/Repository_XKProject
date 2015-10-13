@@ -18,6 +18,8 @@
 #import "MyAppointmentVC.h"
 #import "KGBankDepositVC.h"    //存款换算
 
+#import "KGLuckyDrawGiftVC.h"  //抽奖
+#import "KGExchangeGiftVC.h"   //兑换
 @interface KGUserCenterVC ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong)NSMutableArray *dataSourceArray;
@@ -35,7 +37,7 @@
     self.title = @"个人中心";
     
     self.sectionTitleArray = [NSMutableArray arrayWithArray:@[@"积分",@"我的",@"小工具"]];
-    self.dataSourceArray = [NSMutableArray arrayWithArray:@[@[@"积分抽奖",@"积分兑换"],
+    self.dataSourceArray = [NSMutableArray arrayWithArray:@[@[@"积分抽奖",@"我的礼品"],
                                                             @[@"我的预约",@"我的优惠券"],
                                                             @[@"汇率换算",@"存款计算"]]];
     self.cellImageArray = [NSMutableArray arrayWithArray:@[@[@"jifenchoujiang",@"jifenduihuan"],
@@ -133,8 +135,13 @@
     NSLog(@"%@",[indexPath description]);
     if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:0]] == NSOrderedSame) {
         //积分抽奖
+        KGLuckyDrawGiftVC *vc = [[KGLuckyDrawGiftVC alloc] initWithNibName:@"KGLuckyDrawGiftVC" bundle:nil customBackButton:YES];
+        [self.navigationController pushViewController:vc animated:YES];
+
     }else if ([indexPath compare:[NSIndexPath indexPathForRow:1 inSection:0]] == NSOrderedSame){
-        //积分兑换
+        //我的礼品
+        KGExchangeGiftVC *vc = [[KGExchangeGiftVC alloc] initWithNibName:@"KGExchangeGiftVC" bundle:nil customBackButton:YES];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if ([indexPath compare:[NSIndexPath indexPathForRow:0 inSection:1]] == NSOrderedSame) {
         KGOrderListVC *vc = [[KGOrderListVC alloc] initWithNibName:@"KGOrderListVC" bundle:nil customBackButton:YES];
         [self.navigationController pushViewController:vc animated:YES];

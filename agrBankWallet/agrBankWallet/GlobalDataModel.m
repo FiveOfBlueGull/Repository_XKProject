@@ -84,9 +84,64 @@
     self.userType = [[NSUserDefaults standardUserDefaults] objectForKey:@"userType"];
     self.userNick = [[NSUserDefaults standardUserDefaults] objectForKey:@"userNick"];
     self.userObjectID = [[NSUserDefaults standardUserDefaults] objectForKey:@"userObjectID"];
+}
 
+- (void)compareUserAccoutRemainWithCost:(NSInteger)cost
+                    moreOrEqualThanCost:(void (^)())success_more
+                           lessThanCost:(void (^)())success_less
+                         requestFailure:(void (^)())failure{
+    AVQuery *query = [[AVQuery alloc] initWithClassName:@"UserClass"];
+    [query whereKey:@"objectId" equalTo:self.userObjectID];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error && [objects count] > 0) {
+            AVObject *user = [objects firstObject];
+            NSNumber *accountUserHas = user[@"userAccount"];
+            if ([accountUserHas integerValue] < cost) {
+                if (success_less) {
+                    success_less();
+                }
+            }else{
+                if (success_more) {
+                    success_more();
+                }
+            }
+        }else{
+            if (failure) {
+                failure();
+            }
+        }
+    }];
+}
 
-
+- (void)reduceUserAccountWithCost:(NSInteger)cost
+                          success:(void (^)())success
+                    reduceFailure:(void (^)())reduceFailure
+                   requestFailure:(void (^)())requestFailure{
+    AVQuery *query = [[AVQuery alloc] initWithClassName:@"UserClass"];
+    [query whereKey:@"objectId" equalTo:self.userObjectID];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error && [objects count] > 0) {
+            AVObject *user = [objects firstObject];
+            NSString *accountUserHas = user[@"userAccount"];
+            NSInteger remain = [accountUserHas integerValue] - cost;
+            [user setObject:[@(remain) description] forKey:@"userAccount"];
+            [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    if (success) {
+                        success();
+                    }
+                }else{
+                    if (reduceFailure) {
+                        reduceFailure();
+                    }
+                }
+            }];
+        }else{
+            if (requestFailure) {
+                requestFailure();
+            }
+        }
+    }];
 }
 
 @end
