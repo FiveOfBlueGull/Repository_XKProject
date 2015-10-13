@@ -248,6 +248,8 @@
 		0171B2111BCB872300C44039 /* ZXMultiFormatWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B12D1BCB872300C44039 /* ZXMultiFormatWriter.m */; };
 		0171B2151BCB88D100C44039 /* KGQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B2131BCB88D100C44039 /* KGQRCodeVC.m */; };
 		0171B2161BCB88D100C44039 /* KGQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0171B2141BCB88D100C44039 /* KGQRCodeVC.xib */; };
+		0171B21A1BCBA36A00C44039 /* KGMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B2181BCBA36A00C44039 /* KGMapView.m */; };
+		0171B21B1BCBA36A00C44039 /* KGMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0171B2191BCBA36A00C44039 /* KGMapView.xib */; };
 		30027DDA1BBC62EC00CB93E9 /* KGIntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */; };
 		30027DDD1BBC667000CB93E9 /* KGIntroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DDC1BBC667000CB93E9 /* KGIntroCell.m */; };
 		309098A81BB6FC7B00C30BCE /* KGFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 309098A71BB6FC7B00C30BCE /* KGFormVC.m */; };
@@ -879,6 +881,9 @@
 		0171B2121BCB88D100C44039 /* KGQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGQRCodeVC.h; sourceTree = "<group>"; };
 		0171B2131BCB88D100C44039 /* KGQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGQRCodeVC.m; sourceTree = "<group>"; };
 		0171B2141BCB88D100C44039 /* KGQRCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGQRCodeVC.xib; sourceTree = "<group>"; };
+		0171B2171BCBA36A00C44039 /* KGMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMapView.h; sourceTree = "<group>"; };
+		0171B2181BCBA36A00C44039 /* KGMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMapView.m; sourceTree = "<group>"; };
+		0171B2191BCBA36A00C44039 /* KGMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGMapView.xib; sourceTree = "<group>"; };
 		30027DD81BBC62EC00CB93E9 /* KGIntroVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGIntroVC.h; sourceTree = "<group>"; };
 		30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGIntroVC.m; sourceTree = "<group>"; };
 		30027DDB1BBC667000CB93E9 /* KGIntroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGIntroCell.h; sourceTree = "<group>"; };
@@ -2195,6 +2200,9 @@
 				016393511BC78FD90052A6A5 /* KGActivityDetailVC.m */,
 				016393541BC78FD90052A6A5 /* KGActivityWebVC.h */,
 				016393551BC78FD90052A6A5 /* KGActivityWebVC.m */,
+				0171B2171BCBA36A00C44039 /* KGMapView.h */,
+				0171B2181BCBA36A00C44039 /* KGMapView.m */,
+				0171B2191BCBA36A00C44039 /* KGMapView.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -2517,6 +2525,7 @@
 				8E3B6F671BCB5357002B8C14 /* IQKeyboardManager.bundle in Resources */,
 				8ED2DBB51BB2A1020025D16C /* 3tagTabPicSelected@3x.png in Resources */,
 				016393561BC78FD90052A6A5 /* ActivityStoryboard.storyboard in Resources */,
+				0171B21B1BCBA36A00C44039 /* KGMapView.xib in Resources */,
 				8ED2DBAD1BB2A1020025D16C /* 3tagTabHomeSelected@3x.png in Resources */,
 				8ED2DBCF1BB2A9DC0025D16C /* KGLoginVC.xib in Resources */,
 				8ED2DC011BB3D2760025D16C /* huobiduihuan@2x.png in Resources */,
@@ -2837,6 +2846,7 @@
 				0171B1F91BCB872300C44039 /* ZXQRCodeDecodedBitStreamParser.m in Sources */,
 				0163934A1BC78CBB0052A6A5 /* SubmitApplyVC.m in Sources */,
 				8E3B6EE51BCA3D25002B8C14 /* KGRateExchangeVC.m in Sources */,
+				0171B21A1BCBA36A00C44039 /* KGMapView.m in Sources */,
 				0171B1591BCB872300C44039 /* ZXSMTPResultParser.m in Sources */,
 				0171B1CE1BCB872300C44039 /* ZXEANManufacturerOrgSupport.m in Sources */,
 				0171B1F21BCB872300C44039 /* ZXPDF417Common.m in Sources */,

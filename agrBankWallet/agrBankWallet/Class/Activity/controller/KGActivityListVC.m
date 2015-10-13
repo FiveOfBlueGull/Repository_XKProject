@@ -95,7 +95,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[self performSegueWithIdentifier:@"PushActivityDetailVC" sender:indexPath];
     [self performSegueWithIdentifier:@"PushActivityWebVC" sender:indexPath];
 }
 

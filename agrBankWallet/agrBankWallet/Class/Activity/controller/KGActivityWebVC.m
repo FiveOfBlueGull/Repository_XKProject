@@ -7,15 +7,24 @@
 //
 
 #import "KGActivityWebVC.h"
+#import "KGMapView.h"
 
 @interface KGActivityWebVC ()
 
 @property (weak, nonatomic) IBOutlet UIButton *receiveAction;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+
 @end
 
 @implementation KGActivityWebVC
+
+- (IBAction)locationBtn:(id)sender {
+    KGMapView *_mapVC = [[KGMapView alloc] initWithNibName:@"KGMapView" bundle:nil customBackButton:YES];
+    _mapVC.targetObject = _targetObject;
+    [self.navigationController pushViewController:_mapVC animated:YES];
+}
+
 - (IBAction)receiveAction:(id)sender {
     NSMutableArray *_array = [NSMutableArray array];
     [_array addObjectsFromArray:[_targetObject objectForKey:@"received"]];
@@ -50,6 +59,12 @@
     NSURL *_url = [NSURL URLWithString:[_targetObject objectForKey:@"webUrl"]];
     NSURLRequest *_request = [NSURLRequest requestWithURL:_url];
     [_webView loadRequest:_request];
+    
+    NSArray *_locations = [_targetObject objectForKey:@"location"];
+    if (_locations.count == 0) {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
+    
     NSArray *_array = [_targetObject objectForKey:@"received"];
     if ([_array isKindOfClass:[NSArray class]] && _array.count > 0) {
         if ([_array containsObject:self.globalDataModel.userObjectID]) {

@@ -196,7 +196,22 @@
                             <constraint firstItem="DbK-HB-AL6" firstAttribute="leading" secondItem="feS-X6-ClD" secondAttribute="leading" id="ioc-Jw-Asn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0aD-wc-Z6m"/>
+                    <navigationItem key="navigationItem" id="0aD-wc-Z6m">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="qnB-fz-rJl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K6T-IJ-uft">
+                                <rect key="frame" x="279" y="7" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="otherLocation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="otherLocation"/>
+                                <connections>
+                                    <action selector="locationBtn:" destination="WeC-xo-6K2" eventType="touchUpInside" id="Ybh-ey-Svk"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -210,4 +225,7 @@
             <point key="canvasLocation" x="287" y="649"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="otherLocation" width="22" height="23"/>
+    </resources>
 </document>
