@@ -246,8 +246,6 @@
 		0171B20F1BCB872300C44039 /* ZXQRCodeWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B1281BCB872300C44039 /* ZXQRCodeWriter.m */; };
 		0171B2101BCB872300C44039 /* ZXMultiFormatReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B12B1BCB872300C44039 /* ZXMultiFormatReader.m */; };
 		0171B2111BCB872300C44039 /* ZXMultiFormatWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B12D1BCB872300C44039 /* ZXMultiFormatWriter.m */; };
-		0171B2151BCB88D100C44039 /* KGQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B2131BCB88D100C44039 /* KGQRCodeVC.m */; };
-		0171B2161BCB88D100C44039 /* KGQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0171B2141BCB88D100C44039 /* KGQRCodeVC.xib */; };
 		0171B21A1BCBA36A00C44039 /* KGMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0171B2181BCBA36A00C44039 /* KGMapView.m */; };
 		0171B21B1BCBA36A00C44039 /* KGMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0171B2191BCBA36A00C44039 /* KGMapView.xib */; };
 		30027DDA1BBC62EC00CB93E9 /* KGIntroVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30027DD91BBC62EC00CB93E9 /* KGIntroVC.m */; };
@@ -278,19 +276,6 @@
 		30D702231BCBEB88007B8063 /* TRMenuPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D702221BCBEB88007B8063 /* TRMenuPicker.m */; };
 		30D702271BCC0F0E007B8063 /* CreatQRImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D702251BCC0F0E007B8063 /* CreatQRImage.m */; };
 		30D7022A1BCC1C7C007B8063 /* FormQord.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D702291BCC1C7C007B8063 /* FormQord.m */; };
-		8E3B6EE51BCA3D25002B8C14 /* KGRateExchangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDA1BCA3D25002B8C14 /* KGRateExchangeVC.m */; };
-		8E3B6EE61BCA3D25002B8C14 /* KGRateExchangeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDB1BCA3D25002B8C14 /* KGRateExchangeVC.xib */; };
-		8E3B6EE71BCA3D25002B8C14 /* KGVoucherDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDD1BCA3D25002B8C14 /* KGVoucherDetailVC.m */; };
-		8E3B6EE81BCA3D25002B8C14 /* KGVoucherDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDE1BCA3D25002B8C14 /* KGVoucherDetailVC.xib */; };
-		8E3B6EE91BCA3D25002B8C14 /* KGVoucherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EDF1BCA3D25002B8C14 /* KGVoucherListVC.m */; };
-		8E3B6EEA1BCA3D25002B8C14 /* KGVoucherListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EE01BCA3D25002B8C14 /* KGVoucherListVC.xib */; };
-		8E3B6EEB1BCA3D25002B8C14 /* KGOrderListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EE21BCA3D25002B8C14 /* KGOrderListVC.m */; };
-		8E3B6EEC1BCA3D25002B8C14 /* KGOrderListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EE31BCA3D25002B8C14 /* KGOrderListVC.xib */; };
-		8E3B6EF51BCA3D68002B8C14 /* KGDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EEE1BCA3D68002B8C14 /* KGDescriptionView.m */; };
-		8E3B6EF61BCA3D68002B8C14 /* KGVoucherListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EF01BCA3D68002B8C14 /* KGVoucherListCell.m */; };
-		8E3B6EF71BCA3D68002B8C14 /* KGVoucherListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EF11BCA3D68002B8C14 /* KGVoucherListCell.xib */; };
-		8E3B6EF81BCA3D68002B8C14 /* KGOrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EF31BCA3D68002B8C14 /* KGOrderListCell.m */; };
-		8E3B6EF91BCA3D68002B8C14 /* KGOrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6EF41BCA3D68002B8C14 /* KGOrderListCell.xib */; };
 		8E3B6EFC1BCA3D8D002B8C14 /* KGCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6EFB1BCA3D8D002B8C14 /* KGCommonUtil.m */; };
 		8E3B6F5A1BCB5357002B8C14 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6F381BCB5357002B8C14 /* IQNSArray+Sort.m */; };
 		8E3B6F5B1BCB5357002B8C14 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6F3A1BCB5357002B8C14 /* IQUITextFieldView+Additions.m */; };
@@ -306,10 +291,41 @@
 		8E3B6F651BCB5357002B8C14 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6F541BCB5357002B8C14 /* IQToolbar.m */; };
 		8E3B6F661BCB5357002B8C14 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6F561BCB5357002B8C14 /* IQUIView+IQKeyboardToolbar.m */; };
 		8E3B6F671BCB5357002B8C14 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6F591BCB5357002B8C14 /* IQKeyboardManager.bundle */; };
-		8E3B6F6B1BCB53A9002B8C14 /* KGBankDepositVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6F691BCB53A9002B8C14 /* KGBankDepositVC.m */; };
-		8E3B6F6C1BCB53A9002B8C14 /* KGBankDepositVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6F6A1BCB53A9002B8C14 /* KGBankDepositVC.xib */; };
 		8E3B6F701BCB5809002B8C14 /* backItemImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6F6E1BCB5809002B8C14 /* backItemImage@2x.png */; };
 		8E3B6F711BCB5809002B8C14 /* backItemImageNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6F6F1BCB5809002B8C14 /* backItemImageNormal@2x.png */; };
+		8E3B70131BCCB46F002B8C14 /* KGBankDepositVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE01BCCB46F002B8C14 /* KGBankDepositVC.m */; };
+		8E3B70141BCCB46F002B8C14 /* KGBankDepositVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE11BCCB46F002B8C14 /* KGBankDepositVC.xib */; };
+		8E3B70151BCCB46F002B8C14 /* KGExchangeGiftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE31BCCB46F002B8C14 /* KGExchangeGiftVC.m */; };
+		8E3B70161BCCB46F002B8C14 /* KGExchangeGiftVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE41BCCB46F002B8C14 /* KGExchangeGiftVC.xib */; };
+		8E3B70171BCCB46F002B8C14 /* KGLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE61BCCB46F002B8C14 /* KGLoginVC.m */; };
+		8E3B70181BCCB46F002B8C14 /* KGLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE71BCCB46F002B8C14 /* KGLoginVC.xib */; };
+		8E3B70191BCCB46F002B8C14 /* KGLuckyDrawGiftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FE91BCCB46F002B8C14 /* KGLuckyDrawGiftVC.m */; };
+		8E3B701A1BCCB46F002B8C14 /* KGLuckyDrawGiftVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FEA1BCCB46F002B8C14 /* KGLuckyDrawGiftVC.xib */; };
+		8E3B701B1BCCB46F002B8C14 /* KGOrderListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FEC1BCCB46F002B8C14 /* KGOrderListVC.m */; };
+		8E3B701C1BCCB46F002B8C14 /* KGOrderListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FED1BCCB46F002B8C14 /* KGOrderListVC.xib */; };
+		8E3B701D1BCCB46F002B8C14 /* KGQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FEF1BCCB46F002B8C14 /* KGQRCodeVC.m */; };
+		8E3B701E1BCCB46F002B8C14 /* KGQRCodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF01BCCB46F002B8C14 /* KGQRCodeVC.xib */; };
+		8E3B701F1BCCB46F002B8C14 /* KGRateExchangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF21BCCB46F002B8C14 /* KGRateExchangeVC.m */; };
+		8E3B70201BCCB46F002B8C14 /* KGRateExchangeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF31BCCB46F002B8C14 /* KGRateExchangeVC.xib */; };
+		8E3B70211BCCB46F002B8C14 /* KGRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF51BCCB46F002B8C14 /* KGRegisterVC.m */; };
+		8E3B70221BCCB46F002B8C14 /* KGRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF61BCCB46F002B8C14 /* KGRegisterVC.xib */; };
+		8E3B70231BCCB46F002B8C14 /* KGUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF81BCCB46F002B8C14 /* KGUserCenterVC.m */; };
+		8E3B70241BCCB46F002B8C14 /* KGUserCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FF91BCCB46F002B8C14 /* KGUserCenterVC.xib */; };
+		8E3B70251BCCB46F002B8C14 /* KGVoucherDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FFB1BCCB46F002B8C14 /* KGVoucherDetailVC.m */; };
+		8E3B70261BCCB46F002B8C14 /* KGVoucherDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FFC1BCCB46F002B8C14 /* KGVoucherDetailVC.xib */; };
+		8E3B70271BCCB46F002B8C14 /* KGVoucherListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B6FFE1BCCB46F002B8C14 /* KGVoucherListVC.m */; };
+		8E3B70281BCCB46F002B8C14 /* KGVoucherListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B6FFF1BCCB46F002B8C14 /* KGVoucherListVC.xib */; };
+		8E3B70291BCCB46F002B8C14 /* KGDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70031BCCB46F002B8C14 /* KGDescriptionView.m */; };
+		8E3B702A1BCCB46F002B8C14 /* KGGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70051BCCB46F002B8C14 /* KGGiftListCell.m */; };
+		8E3B702B1BCCB46F002B8C14 /* KGGiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B70061BCCB46F002B8C14 /* KGGiftListCell.xib */; };
+		8E3B702C1BCCB46F002B8C14 /* KGLuckyGiftListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70081BCCB46F002B8C14 /* KGLuckyGiftListCell.m */; };
+		8E3B702D1BCCB46F002B8C14 /* KGLuckyGiftListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B70091BCCB46F002B8C14 /* KGLuckyGiftListCell.xib */; };
+		8E3B702E1BCCB46F002B8C14 /* KGOrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B700B1BCCB46F002B8C14 /* KGOrderListCell.m */; };
+		8E3B702F1BCCB46F002B8C14 /* KGOrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B700C1BCCB46F002B8C14 /* KGOrderListCell.xib */; };
+		8E3B70301BCCB46F002B8C14 /* KGUserCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B700E1BCCB46F002B8C14 /* KGUserCenterCell.m */; };
+		8E3B70311BCCB46F002B8C14 /* KGUserCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B700F1BCCB46F002B8C14 /* KGUserCenterCell.xib */; };
+		8E3B70321BCCB46F002B8C14 /* KGVoucherListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3B70111BCCB46F002B8C14 /* KGVoucherListCell.m */; };
+		8E3B70331BCCB46F002B8C14 /* KGVoucherListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3B70121BCCB46F002B8C14 /* KGVoucherListCell.xib */; };
 		8ED2DB3B1BB290BB0025D16C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DB3A1BB290BB0025D16C /* main.m */; };
 		8ED2DB3E1BB290BB0025D16C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DB3D1BB290BB0025D16C /* AppDelegate.m */; };
 		8ED2DB461BB290BB0025D16C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DB451BB290BB0025D16C /* Images.xcassets */; };
@@ -347,14 +363,6 @@
 		8ED2DBC81BB2A48A0025D16C /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBC31BB2A48A0025D16C /* RDVTabBar.m */; };
 		8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBC51BB2A48A0025D16C /* RDVTabBarController.m */; };
 		8ED2DBCA1BB2A48A0025D16C /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBC71BB2A48A0025D16C /* RDVTabBarItem.m */; };
-		8ED2DBCE1BB2A9DC0025D16C /* KGLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBCC1BB2A9DC0025D16C /* KGLoginVC.m */; };
-		8ED2DBCF1BB2A9DC0025D16C /* KGLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBCD1BB2A9DC0025D16C /* KGLoginVC.xib */; };
-		8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD11BB2AD7B0025D16C /* KGRegisterVC.m */; };
-		8ED2DBD41BB2AD7B0025D16C /* KGRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD21BB2AD7B0025D16C /* KGRegisterVC.xib */; };
-		8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD61BB2B6D70025D16C /* KGUserCenterVC.m */; };
-		8ED2DBD91BB2B6D70025D16C /* KGUserCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBD71BB2B6D70025D16C /* KGUserCenterVC.xib */; };
-		8ED2DBDD1BB38E8D0025D16C /* KGUserCenterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED2DBDB1BB38E8D0025D16C /* KGUserCenterCell.m */; };
-		8ED2DBDE1BB38E8D0025D16C /* KGUserCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBDC1BB38E8D0025D16C /* KGUserCenterCell.xib */; };
 		8ED2DBFE1BB3D2760025D16C /* admin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBF11BB3D2760025D16C /* admin@2x.png */; };
 		8ED2DBFF1BB3D2760025D16C /* cunkuanhuansuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBF21BB3D2760025D16C /* cunkuanhuansuan@2x.png */; };
 		8ED2DC001BB3D2760025D16C /* huilvhuansuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED2DBF31BB3D2760025D16C /* huilvhuansuan@2x.png */; };
@@ -878,9 +886,6 @@
 		0171B12B1BCB872300C44039 /* ZXMultiFormatReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMultiFormatReader.m; sourceTree = "<group>"; };
 		0171B12C1BCB872300C44039 /* ZXMultiFormatWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMultiFormatWriter.h; sourceTree = "<group>"; };
 		0171B12D1BCB872300C44039 /* ZXMultiFormatWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMultiFormatWriter.m; sourceTree = "<group>"; };
-		0171B2121BCB88D100C44039 /* KGQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGQRCodeVC.h; sourceTree = "<group>"; };
-		0171B2131BCB88D100C44039 /* KGQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGQRCodeVC.m; sourceTree = "<group>"; };
-		0171B2141BCB88D100C44039 /* KGQRCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGQRCodeVC.xib; sourceTree = "<group>"; };
 		0171B2171BCBA36A00C44039 /* KGMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGMapView.h; sourceTree = "<group>"; };
 		0171B2181BCBA36A00C44039 /* KGMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGMapView.m; sourceTree = "<group>"; };
 		0171B2191BCBA36A00C44039 /* KGMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGMapView.xib; sourceTree = "<group>"; };
@@ -941,26 +946,6 @@
 		30D702261BCC0F0E007B8063 /* CreatQRImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatQRImage.h; sourceTree = "<group>"; };
 		30D702281BCC1C7C007B8063 /* FormQord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormQord.h; sourceTree = "<group>"; };
 		30D702291BCC1C7C007B8063 /* FormQord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormQord.m; sourceTree = "<group>"; };
-		8E3B6ED91BCA3D25002B8C14 /* KGRateExchangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRateExchangeVC.h; sourceTree = "<group>"; };
-		8E3B6EDA1BCA3D25002B8C14 /* KGRateExchangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRateExchangeVC.m; sourceTree = "<group>"; };
-		8E3B6EDB1BCA3D25002B8C14 /* KGRateExchangeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRateExchangeVC.xib; sourceTree = "<group>"; };
-		8E3B6EDC1BCA3D25002B8C14 /* KGVoucherDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGVoucherDetailVC.h; sourceTree = "<group>"; };
-		8E3B6EDD1BCA3D25002B8C14 /* KGVoucherDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGVoucherDetailVC.m; sourceTree = "<group>"; };
-		8E3B6EDE1BCA3D25002B8C14 /* KGVoucherDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGVoucherDetailVC.xib; sourceTree = "<group>"; };
-		8E3B6EDF1BCA3D25002B8C14 /* KGVoucherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGVoucherListVC.m; sourceTree = "<group>"; };
-		8E3B6EE01BCA3D25002B8C14 /* KGVoucherListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGVoucherListVC.xib; sourceTree = "<group>"; };
-		8E3B6EE11BCA3D25002B8C14 /* KGOrderListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGOrderListVC.h; sourceTree = "<group>"; };
-		8E3B6EE21BCA3D25002B8C14 /* KGOrderListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGOrderListVC.m; sourceTree = "<group>"; };
-		8E3B6EE31BCA3D25002B8C14 /* KGOrderListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGOrderListVC.xib; sourceTree = "<group>"; };
-		8E3B6EE41BCA3D25002B8C14 /* KGVoucherListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGVoucherListVC.h; sourceTree = "<group>"; };
-		8E3B6EED1BCA3D68002B8C14 /* KGDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDescriptionView.h; sourceTree = "<group>"; };
-		8E3B6EEE1BCA3D68002B8C14 /* KGDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDescriptionView.m; sourceTree = "<group>"; };
-		8E3B6EEF1BCA3D68002B8C14 /* KGVoucherListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGVoucherListCell.h; sourceTree = "<group>"; };
-		8E3B6EF01BCA3D68002B8C14 /* KGVoucherListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGVoucherListCell.m; sourceTree = "<group>"; };
-		8E3B6EF11BCA3D68002B8C14 /* KGVoucherListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGVoucherListCell.xib; sourceTree = "<group>"; };
-		8E3B6EF21BCA3D68002B8C14 /* KGOrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGOrderListCell.h; sourceTree = "<group>"; };
-		8E3B6EF31BCA3D68002B8C14 /* KGOrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGOrderListCell.m; sourceTree = "<group>"; };
-		8E3B6EF41BCA3D68002B8C14 /* KGOrderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGOrderListCell.xib; sourceTree = "<group>"; };
 		8E3B6EFA1BCA3D8D002B8C14 /* KGCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGCommonUtil.h; sourceTree = "<group>"; };
 		8E3B6EFB1BCA3D8D002B8C14 /* KGCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGCommonUtil.m; sourceTree = "<group>"; };
 		8E3B6F371BCB5357002B8C14 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
@@ -993,11 +978,58 @@
 		8E3B6F561BCB5357002B8C14 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		8E3B6F571BCB5357002B8C14 /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
 		8E3B6F591BCB5357002B8C14 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		8E3B6F681BCB53A9002B8C14 /* KGBankDepositVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBankDepositVC.h; sourceTree = "<group>"; };
-		8E3B6F691BCB53A9002B8C14 /* KGBankDepositVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBankDepositVC.m; sourceTree = "<group>"; };
-		8E3B6F6A1BCB53A9002B8C14 /* KGBankDepositVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGBankDepositVC.xib; sourceTree = "<group>"; };
 		8E3B6F6E1BCB5809002B8C14 /* backItemImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItemImage@2x.png"; sourceTree = "<group>"; };
 		8E3B6F6F1BCB5809002B8C14 /* backItemImageNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backItemImageNormal@2x.png"; sourceTree = "<group>"; };
+		8E3B6FDF1BCCB46F002B8C14 /* KGBankDepositVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGBankDepositVC.h; sourceTree = "<group>"; };
+		8E3B6FE01BCCB46F002B8C14 /* KGBankDepositVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGBankDepositVC.m; sourceTree = "<group>"; };
+		8E3B6FE11BCCB46F002B8C14 /* KGBankDepositVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGBankDepositVC.xib; sourceTree = "<group>"; };
+		8E3B6FE21BCCB46F002B8C14 /* KGExchangeGiftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGExchangeGiftVC.h; sourceTree = "<group>"; };
+		8E3B6FE31BCCB46F002B8C14 /* KGExchangeGiftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGExchangeGiftVC.m; sourceTree = "<group>"; };
+		8E3B6FE41BCCB46F002B8C14 /* KGExchangeGiftVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGExchangeGiftVC.xib; sourceTree = "<group>"; };
+		8E3B6FE51BCCB46F002B8C14 /* KGLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLoginVC.h; sourceTree = "<group>"; };
+		8E3B6FE61BCCB46F002B8C14 /* KGLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLoginVC.m; sourceTree = "<group>"; };
+		8E3B6FE71BCCB46F002B8C14 /* KGLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGLoginVC.xib; sourceTree = "<group>"; };
+		8E3B6FE81BCCB46F002B8C14 /* KGLuckyDrawGiftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLuckyDrawGiftVC.h; sourceTree = "<group>"; };
+		8E3B6FE91BCCB46F002B8C14 /* KGLuckyDrawGiftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLuckyDrawGiftVC.m; sourceTree = "<group>"; };
+		8E3B6FEA1BCCB46F002B8C14 /* KGLuckyDrawGiftVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGLuckyDrawGiftVC.xib; sourceTree = "<group>"; };
+		8E3B6FEB1BCCB46F002B8C14 /* KGOrderListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGOrderListVC.h; sourceTree = "<group>"; };
+		8E3B6FEC1BCCB46F002B8C14 /* KGOrderListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGOrderListVC.m; sourceTree = "<group>"; };
+		8E3B6FED1BCCB46F002B8C14 /* KGOrderListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGOrderListVC.xib; sourceTree = "<group>"; };
+		8E3B6FEE1BCCB46F002B8C14 /* KGQRCodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGQRCodeVC.h; sourceTree = "<group>"; };
+		8E3B6FEF1BCCB46F002B8C14 /* KGQRCodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGQRCodeVC.m; sourceTree = "<group>"; };
+		8E3B6FF01BCCB46F002B8C14 /* KGQRCodeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGQRCodeVC.xib; sourceTree = "<group>"; };
+		8E3B6FF11BCCB46F002B8C14 /* KGRateExchangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRateExchangeVC.h; sourceTree = "<group>"; };
+		8E3B6FF21BCCB46F002B8C14 /* KGRateExchangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRateExchangeVC.m; sourceTree = "<group>"; };
+		8E3B6FF31BCCB46F002B8C14 /* KGRateExchangeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRateExchangeVC.xib; sourceTree = "<group>"; };
+		8E3B6FF41BCCB46F002B8C14 /* KGRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRegisterVC.h; sourceTree = "<group>"; };
+		8E3B6FF51BCCB46F002B8C14 /* KGRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRegisterVC.m; sourceTree = "<group>"; };
+		8E3B6FF61BCCB46F002B8C14 /* KGRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRegisterVC.xib; sourceTree = "<group>"; };
+		8E3B6FF71BCCB46F002B8C14 /* KGUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserCenterVC.h; sourceTree = "<group>"; };
+		8E3B6FF81BCCB46F002B8C14 /* KGUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserCenterVC.m; sourceTree = "<group>"; };
+		8E3B6FF91BCCB46F002B8C14 /* KGUserCenterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGUserCenterVC.xib; sourceTree = "<group>"; };
+		8E3B6FFA1BCCB46F002B8C14 /* KGVoucherDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGVoucherDetailVC.h; sourceTree = "<group>"; };
+		8E3B6FFB1BCCB46F002B8C14 /* KGVoucherDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGVoucherDetailVC.m; sourceTree = "<group>"; };
+		8E3B6FFC1BCCB46F002B8C14 /* KGVoucherDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGVoucherDetailVC.xib; sourceTree = "<group>"; };
+		8E3B6FFD1BCCB46F002B8C14 /* KGVoucherListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGVoucherListVC.h; sourceTree = "<group>"; };
+		8E3B6FFE1BCCB46F002B8C14 /* KGVoucherListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGVoucherListVC.m; sourceTree = "<group>"; };
+		8E3B6FFF1BCCB46F002B8C14 /* KGVoucherListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGVoucherListVC.xib; sourceTree = "<group>"; };
+		8E3B70021BCCB46F002B8C14 /* KGDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDescriptionView.h; sourceTree = "<group>"; };
+		8E3B70031BCCB46F002B8C14 /* KGDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDescriptionView.m; sourceTree = "<group>"; };
+		8E3B70041BCCB46F002B8C14 /* KGGiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGGiftListCell.h; sourceTree = "<group>"; };
+		8E3B70051BCCB46F002B8C14 /* KGGiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGGiftListCell.m; sourceTree = "<group>"; };
+		8E3B70061BCCB46F002B8C14 /* KGGiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGGiftListCell.xib; sourceTree = "<group>"; };
+		8E3B70071BCCB46F002B8C14 /* KGLuckyGiftListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLuckyGiftListCell.h; sourceTree = "<group>"; };
+		8E3B70081BCCB46F002B8C14 /* KGLuckyGiftListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLuckyGiftListCell.m; sourceTree = "<group>"; };
+		8E3B70091BCCB46F002B8C14 /* KGLuckyGiftListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGLuckyGiftListCell.xib; sourceTree = "<group>"; };
+		8E3B700A1BCCB46F002B8C14 /* KGOrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGOrderListCell.h; sourceTree = "<group>"; };
+		8E3B700B1BCCB46F002B8C14 /* KGOrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGOrderListCell.m; sourceTree = "<group>"; };
+		8E3B700C1BCCB46F002B8C14 /* KGOrderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGOrderListCell.xib; sourceTree = "<group>"; };
+		8E3B700D1BCCB46F002B8C14 /* KGUserCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserCenterCell.h; sourceTree = "<group>"; };
+		8E3B700E1BCCB46F002B8C14 /* KGUserCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserCenterCell.m; sourceTree = "<group>"; };
+		8E3B700F1BCCB46F002B8C14 /* KGUserCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGUserCenterCell.xib; sourceTree = "<group>"; };
+		8E3B70101BCCB46F002B8C14 /* KGVoucherListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGVoucherListCell.h; sourceTree = "<group>"; };
+		8E3B70111BCCB46F002B8C14 /* KGVoucherListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGVoucherListCell.m; sourceTree = "<group>"; };
+		8E3B70121BCCB46F002B8C14 /* KGVoucherListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGVoucherListCell.xib; sourceTree = "<group>"; };
 		8ED2DB351BB290BB0025D16C /* agrBankWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agrBankWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED2DB391BB290BB0025D16C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED2DB3A1BB290BB0025D16C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1046,18 +1078,6 @@
 		8ED2DBC51BB2A48A0025D16C /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
 		8ED2DBC61BB2A48A0025D16C /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
 		8ED2DBC71BB2A48A0025D16C /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
-		8ED2DBCB1BB2A9DC0025D16C /* KGLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGLoginVC.h; sourceTree = "<group>"; };
-		8ED2DBCC1BB2A9DC0025D16C /* KGLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGLoginVC.m; sourceTree = "<group>"; };
-		8ED2DBCD1BB2A9DC0025D16C /* KGLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGLoginVC.xib; sourceTree = "<group>"; };
-		8ED2DBD01BB2AD7B0025D16C /* KGRegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGRegisterVC.h; sourceTree = "<group>"; };
-		8ED2DBD11BB2AD7B0025D16C /* KGRegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGRegisterVC.m; sourceTree = "<group>"; };
-		8ED2DBD21BB2AD7B0025D16C /* KGRegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGRegisterVC.xib; sourceTree = "<group>"; };
-		8ED2DBD51BB2B6D70025D16C /* KGUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserCenterVC.h; sourceTree = "<group>"; };
-		8ED2DBD61BB2B6D70025D16C /* KGUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserCenterVC.m; sourceTree = "<group>"; };
-		8ED2DBD71BB2B6D70025D16C /* KGUserCenterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGUserCenterVC.xib; sourceTree = "<group>"; };
-		8ED2DBDA1BB38E8D0025D16C /* KGUserCenterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserCenterCell.h; sourceTree = "<group>"; };
-		8ED2DBDB1BB38E8D0025D16C /* KGUserCenterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserCenterCell.m; sourceTree = "<group>"; };
-		8ED2DBDC1BB38E8D0025D16C /* KGUserCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KGUserCenterCell.xib; sourceTree = "<group>"; };
 		8ED2DBF11BB3D2760025D16C /* admin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "admin@2x.png"; sourceTree = "<group>"; };
 		8ED2DBF21BB3D2760025D16C /* cunkuanhuansuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cunkuanhuansuan@2x.png"; sourceTree = "<group>"; };
 		8ED2DBF31BB3D2760025D16C /* huilvhuansuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "huilvhuansuan@2x.png"; sourceTree = "<group>"; };
@@ -2098,6 +2118,87 @@
 			path = common;
 			sourceTree = "<group>";
 		};
+		8E3B6FDD1BCCB46F002B8C14 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				8E3B6FDE1BCCB46F002B8C14 /* controller */,
+				8E3B70001BCCB46F002B8C14 /* model */,
+				8E3B70011BCCB46F002B8C14 /* view */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		8E3B6FDE1BCCB46F002B8C14 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E3B6FDF1BCCB46F002B8C14 /* KGBankDepositVC.h */,
+				8E3B6FE01BCCB46F002B8C14 /* KGBankDepositVC.m */,
+				8E3B6FE11BCCB46F002B8C14 /* KGBankDepositVC.xib */,
+				8E3B6FE21BCCB46F002B8C14 /* KGExchangeGiftVC.h */,
+				8E3B6FE31BCCB46F002B8C14 /* KGExchangeGiftVC.m */,
+				8E3B6FE41BCCB46F002B8C14 /* KGExchangeGiftVC.xib */,
+				8E3B6FE51BCCB46F002B8C14 /* KGLoginVC.h */,
+				8E3B6FE61BCCB46F002B8C14 /* KGLoginVC.m */,
+				8E3B6FE71BCCB46F002B8C14 /* KGLoginVC.xib */,
+				8E3B6FE81BCCB46F002B8C14 /* KGLuckyDrawGiftVC.h */,
+				8E3B6FE91BCCB46F002B8C14 /* KGLuckyDrawGiftVC.m */,
+				8E3B6FEA1BCCB46F002B8C14 /* KGLuckyDrawGiftVC.xib */,
+				8E3B6FEB1BCCB46F002B8C14 /* KGOrderListVC.h */,
+				8E3B6FEC1BCCB46F002B8C14 /* KGOrderListVC.m */,
+				8E3B6FED1BCCB46F002B8C14 /* KGOrderListVC.xib */,
+				8E3B6FEE1BCCB46F002B8C14 /* KGQRCodeVC.h */,
+				8E3B6FEF1BCCB46F002B8C14 /* KGQRCodeVC.m */,
+				8E3B6FF01BCCB46F002B8C14 /* KGQRCodeVC.xib */,
+				8E3B6FF11BCCB46F002B8C14 /* KGRateExchangeVC.h */,
+				8E3B6FF21BCCB46F002B8C14 /* KGRateExchangeVC.m */,
+				8E3B6FF31BCCB46F002B8C14 /* KGRateExchangeVC.xib */,
+				8E3B6FF41BCCB46F002B8C14 /* KGRegisterVC.h */,
+				8E3B6FF51BCCB46F002B8C14 /* KGRegisterVC.m */,
+				8E3B6FF61BCCB46F002B8C14 /* KGRegisterVC.xib */,
+				8E3B6FF71BCCB46F002B8C14 /* KGUserCenterVC.h */,
+				8E3B6FF81BCCB46F002B8C14 /* KGUserCenterVC.m */,
+				8E3B6FF91BCCB46F002B8C14 /* KGUserCenterVC.xib */,
+				8E3B6FFA1BCCB46F002B8C14 /* KGVoucherDetailVC.h */,
+				8E3B6FFB1BCCB46F002B8C14 /* KGVoucherDetailVC.m */,
+				8E3B6FFC1BCCB46F002B8C14 /* KGVoucherDetailVC.xib */,
+				8E3B6FFD1BCCB46F002B8C14 /* KGVoucherListVC.h */,
+				8E3B6FFE1BCCB46F002B8C14 /* KGVoucherListVC.m */,
+				8E3B6FFF1BCCB46F002B8C14 /* KGVoucherListVC.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8E3B70001BCCB46F002B8C14 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8E3B70011BCCB46F002B8C14 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8E3B70021BCCB46F002B8C14 /* KGDescriptionView.h */,
+				8E3B70031BCCB46F002B8C14 /* KGDescriptionView.m */,
+				8E3B70041BCCB46F002B8C14 /* KGGiftListCell.h */,
+				8E3B70051BCCB46F002B8C14 /* KGGiftListCell.m */,
+				8E3B70061BCCB46F002B8C14 /* KGGiftListCell.xib */,
+				8E3B70071BCCB46F002B8C14 /* KGLuckyGiftListCell.h */,
+				8E3B70081BCCB46F002B8C14 /* KGLuckyGiftListCell.m */,
+				8E3B70091BCCB46F002B8C14 /* KGLuckyGiftListCell.xib */,
+				8E3B700A1BCCB46F002B8C14 /* KGOrderListCell.h */,
+				8E3B700B1BCCB46F002B8C14 /* KGOrderListCell.m */,
+				8E3B700C1BCCB46F002B8C14 /* KGOrderListCell.xib */,
+				8E3B700D1BCCB46F002B8C14 /* KGUserCenterCell.h */,
+				8E3B700E1BCCB46F002B8C14 /* KGUserCenterCell.m */,
+				8E3B700F1BCCB46F002B8C14 /* KGUserCenterCell.xib */,
+				8E3B70101BCCB46F002B8C14 /* KGVoucherListCell.h */,
+				8E3B70111BCCB46F002B8C14 /* KGVoucherListCell.m */,
+				8E3B70121BCCB46F002B8C14 /* KGVoucherListCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		8ED2DB2C1BB290BB0025D16C = {
 			isa = PBXGroup;
 			children = (
@@ -2170,10 +2271,10 @@
 		8ED2DB5E1BB297050025D16C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				8E3B6FDD1BCCB46F002B8C14 /* UserCenter */,
 				30027DD41BBC62A100CB93E9 /* introduction */,
 				309098A21BB6FC3B00C30BCE /* Form */,
 				8ED2DB5F1BB297050025D16C /* Activity */,
-				8ED2DB761BB297050025D16C /* UserCenter */,
 				8ED2DB631BB297050025D16C /* Common */,
 				8ED2DB8B1BB29BC40025D16C /* Framework */,
 			);
@@ -2276,75 +2377,6 @@
 		8ED2DB6D1BB297050025D16C /* view */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		8ED2DB761BB297050025D16C /* UserCenter */ = {
-			isa = PBXGroup;
-			children = (
-				8ED2DB771BB297050025D16C /* controller */,
-				8ED2DB781BB297050025D16C /* model */,
-				8ED2DB791BB297050025D16C /* view */,
-			);
-			path = UserCenter;
-			sourceTree = "<group>";
-		};
-		8ED2DB771BB297050025D16C /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				8E3B6F681BCB53A9002B8C14 /* KGBankDepositVC.h */,
-				8E3B6F691BCB53A9002B8C14 /* KGBankDepositVC.m */,
-				8E3B6F6A1BCB53A9002B8C14 /* KGBankDepositVC.xib */,
-				8E3B6ED91BCA3D25002B8C14 /* KGRateExchangeVC.h */,
-				8E3B6EDA1BCA3D25002B8C14 /* KGRateExchangeVC.m */,
-				8E3B6EDB1BCA3D25002B8C14 /* KGRateExchangeVC.xib */,
-				8E3B6EDC1BCA3D25002B8C14 /* KGVoucherDetailVC.h */,
-				8E3B6EDD1BCA3D25002B8C14 /* KGVoucherDetailVC.m */,
-				8E3B6EDE1BCA3D25002B8C14 /* KGVoucherDetailVC.xib */,
-				8E3B6EE41BCA3D25002B8C14 /* KGVoucherListVC.h */,
-				8E3B6EDF1BCA3D25002B8C14 /* KGVoucherListVC.m */,
-				8E3B6EE01BCA3D25002B8C14 /* KGVoucherListVC.xib */,
-				8E3B6EE11BCA3D25002B8C14 /* KGOrderListVC.h */,
-				8E3B6EE21BCA3D25002B8C14 /* KGOrderListVC.m */,
-				8E3B6EE31BCA3D25002B8C14 /* KGOrderListVC.xib */,
-				8ED2DBCB1BB2A9DC0025D16C /* KGLoginVC.h */,
-				8ED2DBCC1BB2A9DC0025D16C /* KGLoginVC.m */,
-				8ED2DBCD1BB2A9DC0025D16C /* KGLoginVC.xib */,
-				8ED2DBD01BB2AD7B0025D16C /* KGRegisterVC.h */,
-				8ED2DBD11BB2AD7B0025D16C /* KGRegisterVC.m */,
-				8ED2DBD21BB2AD7B0025D16C /* KGRegisterVC.xib */,
-				8ED2DBD51BB2B6D70025D16C /* KGUserCenterVC.h */,
-				8ED2DBD61BB2B6D70025D16C /* KGUserCenterVC.m */,
-				8ED2DBD71BB2B6D70025D16C /* KGUserCenterVC.xib */,
-				0171B2121BCB88D100C44039 /* KGQRCodeVC.h */,
-				0171B2131BCB88D100C44039 /* KGQRCodeVC.m */,
-				0171B2141BCB88D100C44039 /* KGQRCodeVC.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		8ED2DB781BB297050025D16C /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		8ED2DB791BB297050025D16C /* view */ = {
-			isa = PBXGroup;
-			children = (
-				8E3B6EED1BCA3D68002B8C14 /* KGDescriptionView.h */,
-				8E3B6EEE1BCA3D68002B8C14 /* KGDescriptionView.m */,
-				8E3B6EEF1BCA3D68002B8C14 /* KGVoucherListCell.h */,
-				8E3B6EF01BCA3D68002B8C14 /* KGVoucherListCell.m */,
-				8E3B6EF11BCA3D68002B8C14 /* KGVoucherListCell.xib */,
-				8E3B6EF21BCA3D68002B8C14 /* KGOrderListCell.h */,
-				8E3B6EF31BCA3D68002B8C14 /* KGOrderListCell.m */,
-				8E3B6EF41BCA3D68002B8C14 /* KGOrderListCell.xib */,
-				8ED2DBDA1BB38E8D0025D16C /* KGUserCenterCell.h */,
-				8ED2DBDB1BB38E8D0025D16C /* KGUserCenterCell.m */,
-				8ED2DBDC1BB38E8D0025D16C /* KGUserCenterCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -2519,58 +2551,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED2DBA91BB2A1020025D16C /* 3tagTabFindSelected@3x.png in Resources */,
-				8E3B6EEC1BCA3D25002B8C14 /* KGOrderListVC.xib in Resources */,
 				8ED2DBB41BB2A1020025D16C /* 3tagTabPicSelected@2x.png in Resources */,
+				8E3B70281BCCB46F002B8C14 /* KGVoucherListVC.xib in Resources */,
 				8ED2DC071BB3D2760025D16C /* user.png in Resources */,
 				8E3B6F671BCB5357002B8C14 /* IQKeyboardManager.bundle in Resources */,
 				8ED2DBB51BB2A1020025D16C /* 3tagTabPicSelected@3x.png in Resources */,
 				016393561BC78FD90052A6A5 /* ActivityStoryboard.storyboard in Resources */,
 				0171B21B1BCBA36A00C44039 /* KGMapView.xib in Resources */,
 				8ED2DBAD1BB2A1020025D16C /* 3tagTabHomeSelected@3x.png in Resources */,
-				8ED2DBCF1BB2A9DC0025D16C /* KGLoginVC.xib in Resources */,
 				8ED2DC011BB3D2760025D16C /* huobiduihuan@2x.png in Resources */,
-				8ED2DBDE1BB38E8D0025D16C /* KGUserCenterCell.xib in Resources */,
 				8E3B6F701BCB5809002B8C14 /* backItemImage@2x.png in Resources */,
 				8ED2DBBF1BB2A1FB0025D16C /* Default.png in Resources */,
 				8ED2DC091BB3D2760025D16C /* youhuiquan@2x.png in Resources */,
+				8E3B702B1BCCB46F002B8C14 /* KGGiftListCell.xib in Resources */,
 				8ED2DBB01BB2A1020025D16C /* 3tagTabMeSelected@2x.png in Resources */,
-				0171B2161BCB88D100C44039 /* KGQRCodeVC.xib in Resources */,
-				8E3B6EE61BCA3D25002B8C14 /* KGRateExchangeVC.xib in Resources */,
 				8ED2DC021BB3D2760025D16C /* jifen@2x.png in Resources */,
 				8ED2DBBC1BB2A1FB0025D16C /* Default-375w-667h@2x.png in Resources */,
 				8ED2DBBD1BB2A1FB0025D16C /* Default-414w-736h.png in Resources */,
+				8E3B70261BCCB46F002B8C14 /* KGVoucherDetailVC.xib in Resources */,
+				8E3B70141BCCB46F002B8C14 /* KGBankDepositVC.xib in Resources */,
 				8E3B6F711BCB5809002B8C14 /* backItemImageNormal@2x.png in Resources */,
-				8E3B6EE81BCA3D25002B8C14 /* KGVoucherDetailVC.xib in Resources */,
-				8ED2DBD41BB2AD7B0025D16C /* KGRegisterVC.xib in Resources */,
 				8ED2DBA71BB2A1020025D16C /* 3tagTabFindNormal@3x.png in Resources */,
 				8ED2DC051BB3D2760025D16C /* tiaozhuan@2x.png in Resources */,
 				8ED2DB461BB290BB0025D16C /* Images.xcassets in Resources */,
 				8ED2DBAF1BB2A1020025D16C /* 3tagTabMeNormal@3x.png in Resources */,
-				8E3B6EF71BCA3D68002B8C14 /* KGVoucherListCell.xib in Resources */,
 				8ED2DBAE1BB2A1020025D16C /* 3tagTabMeNormal@2x.png in Resources */,
+				8E3B70201BCCB46F002B8C14 /* KGRateExchangeVC.xib in Resources */,
 				8ED2DBAA1BB2A1020025D16C /* 3tagTabHomeNormal@2x.png in Resources */,
+				8E3B701E1BCCB46F002B8C14 /* KGQRCodeVC.xib in Resources */,
 				8ED2DBB31BB2A1020025D16C /* 3tagTabPicNormal@3x.png in Resources */,
 				8ED2DC0A1BB3D2760025D16C /* yuyue@2x.png in Resources */,
 				8ED2DBBE1BB2A1FB0025D16C /* Default-568h@2x.png in Resources */,
+				8E3B701A1BCCB46F002B8C14 /* KGLuckyDrawGiftVC.xib in Resources */,
 				8ED2DBA61BB2A1020025D16C /* 3tagTabFindNormal@2x.png in Resources */,
 				8ED2DC061BB3D2760025D16C /* tiaozhuan_2@2x.png in Resources */,
 				8ED2DBFF1BB3D2760025D16C /* cunkuanhuansuan@2x.png in Resources */,
+				8E3B70331BCCB46F002B8C14 /* KGVoucherListCell.xib in Resources */,
+				8E3B70221BCCB46F002B8C14 /* KGRegisterVC.xib in Resources */,
 				8ED2DC031BB3D2760025D16C /* jifenchoujiang@2x.png in Resources */,
+				8E3B702F1BCCB46F002B8C14 /* KGOrderListCell.xib in Resources */,
+				8E3B70181BCCB46F002B8C14 /* KGLoginVC.xib in Resources */,
 				8ED2DBC01BB2A1FB0025D16C /* Default@2x.png in Resources */,
 				8ED2DBFE1BB3D2760025D16C /* admin@2x.png in Resources */,
+				8E3B702D1BCCB46F002B8C14 /* KGLuckyGiftListCell.xib in Resources */,
 				8ED2DBB21BB2A1020025D16C /* 3tagTabPicNormal@2x.png in Resources */,
 				8ED2DC081BB3D2760025D16C /* yonghuming@2x.png in Resources */,
+				8E3B701C1BCCB46F002B8C14 /* KGOrderListVC.xib in Resources */,
+				8E3B70311BCCB46F002B8C14 /* KGUserCenterCell.xib in Resources */,
 				8ED2DC001BB3D2760025D16C /* huilvhuansuan@2x.png in Resources */,
-				8E3B6F6C1BCB53A9002B8C14 /* KGBankDepositVC.xib in Resources */,
 				8ED2DBAB1BB2A1020025D16C /* 3tagTabHomeNormal@3x.png in Resources */,
-				8ED2DBD91BB2B6D70025D16C /* KGUserCenterVC.xib in Resources */,
-				8E3B6EEA1BCA3D25002B8C14 /* KGVoucherListVC.xib in Resources */,
+				8E3B70161BCCB46F002B8C14 /* KGExchangeGiftVC.xib in Resources */,
 				8ED2DC0C1BB3D6410025D16C /* gaosibeijing@2x.png in Resources */,
 				8ED2DC041BB3D2760025D16C /* jifenduihuan@2x.png in Resources */,
 				8ED2DBA81BB2A1020025D16C /* 3tagTabFindSelected@2x.png in Resources */,
 				8ED2DBAC1BB2A1020025D16C /* 3tagTabHomeSelected@2x.png in Resources */,
+				8E3B70241BCCB46F002B8C14 /* KGUserCenterVC.xib in Resources */,
 				012506761BC8E78800EF5D40 /* AppointmentStoryboard.storyboard in Resources */,
-				8E3B6EF91BCA3D68002B8C14 /* KGOrderListCell.xib in Resources */,
 				8ED2DBB11BB2A1020025D16C /* 3tagTabMeSelected@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2600,7 +2636,6 @@
 				0171B1811BCB872300C44039 /* ZXByteMatrix.m in Sources */,
 				0171B2081BCB872300C44039 /* ZXQRCodeEncoder.m in Sources */,
 				30B4FCFE1BC15C9F00D100F8 /* SDWebImageDownloader.m in Sources */,
-				8ED2DBCE1BB2A9DC0025D16C /* KGLoginVC.m in Sources */,
 				0171B1571BCB872300C44039 /* ZXSMSParsedResult.m in Sources */,
 				0171B1E61BCB872300C44039 /* ZXPDF417DetectionResult.m in Sources */,
 				0171B1B61BCB872300C44039 /* ZXRSSExpandedDecodedObject.m in Sources */,
@@ -2619,19 +2654,19 @@
 				30B4FD011BC15C9F00D100F8 /* SDWebImagePrefetcher.m in Sources */,
 				0171B2051BCB872300C44039 /* ZXQRCodeFinderPatternInfo.m in Sources */,
 				0171B1EC1BCB872300C44039 /* ZXPDF417.m in Sources */,
+				8E3B70191BCCB46F002B8C14 /* KGLuckyDrawGiftVC.m in Sources */,
 				0171B16C1BCB872300C44039 /* ZXGenericGF.m in Sources */,
 				0171B1511BCB872300C44039 /* ZXISBNResultParser.m in Sources */,
+				8E3B701D1BCCB46F002B8C14 /* KGQRCodeVC.m in Sources */,
 				0171B14C1BCB872300C44039 /* ZXExpandedProductParsedResult.m in Sources */,
 				30B4FD081BC15C9F00D100F8 /* UIView+WebCacheOperation.m in Sources */,
 				0163935C1BC78FE80052A6A5 /* ActivityItem.m in Sources */,
 				8ED2DB3B1BB290BB0025D16C /* main.m in Sources */,
 				0171B1EF1BCB872300C44039 /* ZXPDF417Dimensions.m in Sources */,
-				8E3B6EEB1BCA3D25002B8C14 /* KGOrderListVC.m in Sources */,
 				0171B1E01BCB872300C44039 /* ZXPDF417BarcodeMetadata.m in Sources */,
 				0171B2101BCB872300C44039 /* ZXMultiFormatReader.m in Sources */,
 				0171B1681BCB872300C44039 /* ZXImage.m in Sources */,
 				30D702231BCBEB88007B8063 /* TRMenuPicker.m in Sources */,
-				8ED2DBDD1BB38E8D0025D16C /* KGUserCenterCell.m in Sources */,
 				0171B1561BCB872300C44039 /* ZXSMSMMSResultParser.m in Sources */,
 				30B4FD041BC15C9F00D100F8 /* UIImage+MultiFormat.m in Sources */,
 				0171B1A81BCB872300C44039 /* ZXAI01320xDecoder.m in Sources */,
@@ -2640,13 +2675,11 @@
 				0171B1AA1BCB872300C44039 /* ZXAI01393xDecoder.m in Sources */,
 				30027DDD1BBC667000CB93E9 /* KGIntroCell.m in Sources */,
 				0171B1FA1BCB872300C44039 /* ZXQRCodeDecoder.m in Sources */,
-				8E3B6EF61BCA3D68002B8C14 /* KGVoucherListCell.m in Sources */,
 				0171B1C31BCB872300C44039 /* ZXCodaBarReader.m in Sources */,
 				30D7021F1BCACADE007B8063 /* FormModel.m in Sources */,
 				0171B1F41BCB872300C44039 /* ZXPDF417ResultMetadata.m in Sources */,
 				0171B12E1BCB872300C44039 /* bitstream.c in Sources */,
 				0171B1B11BCB872300C44039 /* ZXRSSExpandedBlockParsedResult.m in Sources */,
-				8ED2DBD31BB2AD7B0025D16C /* KGRegisterVC.m in Sources */,
 				0171B1EE1BCB872300C44039 /* ZXPDF417BarcodeRow.m in Sources */,
 				30B4FD071BC15C9F00D100F8 /* UIImageView+WebCache.m in Sources */,
 				0171B1E11BCB872300C44039 /* ZXPDF417BarcodeValue.m in Sources */,
@@ -2654,19 +2687,17 @@
 				0171B1AF1BCB872300C44039 /* ZXAI01weightDecoder.m in Sources */,
 				0171B1B81BCB872300C44039 /* ZXRSSExpandedGeneralAppIdDecoder.m in Sources */,
 				0171B1D41BCB872300C44039 /* ZXOneDReader.m in Sources */,
-				8E3B6EE91BCA3D25002B8C14 /* KGVoucherListVC.m in Sources */,
 				0171B1331BCB872300C44039 /* qrspec.c in Sources */,
 				0171B1741BCB872300C44039 /* ZXByteArray.m in Sources */,
 				0171B1A51BCB872300C44039 /* ZXGenericMultipleBarcodeReader.m in Sources */,
-				8E3B6F6B1BCB53A9002B8C14 /* KGBankDepositVC.m in Sources */,
 				0171B1521BCB872300C44039 /* ZXParsedResult.m in Sources */,
 				0171B2061BCB872300C44039 /* ZXQRCode.m in Sources */,
 				0171B1FC1BCB872300C44039 /* ZXQRCodeErrorCorrectionLevel.m in Sources */,
 				0171B17D1BCB872300C44039 /* ZXPerspectiveTransform.m in Sources */,
 				0171B1551BCB872300C44039 /* ZXResultParser.m in Sources */,
 				0171B1E41BCB872300C44039 /* ZXPDF417CodewordDecoder.m in Sources */,
-				8E3B6EF51BCA3D68002B8C14 /* KGDescriptionView.m in Sources */,
 				0171B1B21BCB872300C44039 /* ZXRSSExpandedCurrentParsingState.m in Sources */,
+				8E3B70251BCCB46F002B8C14 /* KGVoucherDetailVC.m in Sources */,
 				0171B1411BCB872300C44039 /* ZXAztecWriter.m in Sources */,
 				0171B1901BCB872300C44039 /* ZXDataMatrixVersion.m in Sources */,
 				0171B16E1BCB872300C44039 /* ZXReedSolomonDecoder.m in Sources */,
@@ -2688,6 +2719,7 @@
 				0171B1BC1BCB872300C44039 /* ZXRSSExpandedRow.m in Sources */,
 				0171B1761BCB872300C44039 /* ZXDecoderResult.m in Sources */,
 				30B4FCD61BC14C7000D100F8 /* KGIntroQuestVC.m in Sources */,
+				8E3B70231BCCB46F002B8C14 /* KGUserCenterVC.m in Sources */,
 				0171B18B1BCB872300C44039 /* ZXRGBLuminanceSource.m in Sources */,
 				0171B12F1BCB872300C44039 /* mask.c in Sources */,
 				0171B1351BCB872300C44039 /* split.c in Sources */,
@@ -2700,6 +2732,7 @@
 				0171B1EB1BCB872300C44039 /* ZXPDF417DetectorResult.m in Sources */,
 				0171B16F1BCB872300C44039 /* ZXReedSolomonEncoder.m in Sources */,
 				0171B1D51BCB872300C44039 /* ZXUPCAReader.m in Sources */,
+				8E3B70211BCCB46F002B8C14 /* KGRegisterVC.m in Sources */,
 				0171B20C1BCB872300C44039 /* ZXMultiFinderPatternFinder.m in Sources */,
 				0171B1CB1BCB872300C44039 /* ZXEAN13Writer.m in Sources */,
 				0171B1451BCB872300C44039 /* ZXAddressBookParsedResult.m in Sources */,
@@ -2709,6 +2742,7 @@
 				0171B1801BCB872300C44039 /* ZXBinaryBitmap.m in Sources */,
 				0171B1601BCB872300C44039 /* ZXVCardResultParser.m in Sources */,
 				0171B1AB1BCB872300C44039 /* ZXAI013x0x1xDecoder.m in Sources */,
+				8E3B702A1BCCB46F002B8C14 /* KGGiftListCell.m in Sources */,
 				0171B19F1BCB872300C44039 /* ZXDataMatrixWriter.m in Sources */,
 				0171B1961BCB872300C44039 /* ZXDataMatrixEdifactEncoder.m in Sources */,
 				0171B1C01BCB872300C44039 /* ZXRSSFinderPattern.m in Sources */,
@@ -2717,17 +2751,15 @@
 				0171B1C11BCB872300C44039 /* ZXRSSPair.m in Sources */,
 				012506741BC8E6EA00EF5D40 /* MyAppointmentCell.m in Sources */,
 				0171B1B71BCB872300C44039 /* ZXRSSExpandedFieldParser.m in Sources */,
-				8ED2DBD81BB2B6D70025D16C /* KGUserCenterVC.m in Sources */,
 				0171B1BA1BCB872300C44039 /* ZXRSSExpandedPair.m in Sources */,
+				8E3B702E1BCCB46F002B8C14 /* KGOrderListCell.m in Sources */,
 				016393581BC78FD90052A6A5 /* KGActivityListVC.m in Sources */,
 				30D7021C1BCAB1EB007B8063 /* KGInputVC.m in Sources */,
 				0171B1771BCB872300C44039 /* ZXDefaultGridSampler.m in Sources */,
-				0171B2151BCB88D100C44039 /* KGQRCodeVC.m in Sources */,
 				0171B1C41BCB872300C44039 /* ZXCodaBarWriter.m in Sources */,
 				8ED2DBC91BB2A48A0025D16C /* RDVTabBarController.m in Sources */,
 				016393571BC78FD90052A6A5 /* KGActivityDetailVC.m in Sources */,
 				0171B1991BCB872300C44039 /* ZXDataMatrixHighLevelEncoder.m in Sources */,
-				8E3B6EF81BCA3D68002B8C14 /* KGOrderListCell.m in Sources */,
 				0171B1861BCB872300C44039 /* ZXInvertedLuminanceSource.m in Sources */,
 				0171B1731BCB872300C44039 /* ZXBoolArray.m in Sources */,
 				0171B1B91BCB872300C44039 /* ZXBitArrayBuilder.m in Sources */,
@@ -2736,6 +2768,7 @@
 				0171B1311BCB872300C44039 /* qrencode.c in Sources */,
 				016393591BC78FD90052A6A5 /* KGActivityWebVC.m in Sources */,
 				30B4FCFA1BC15C9F00D100F8 /* NSData+ImageContentType.m in Sources */,
+				8E3B702C1BCCB46F002B8C14 /* KGLuckyGiftListCell.m in Sources */,
 				0171B1321BCB872300C44039 /* qrinput.c in Sources */,
 				0171B1F11BCB872300C44039 /* ZXPDF417HighLevelEncoder.m in Sources */,
 				0171B1D01BCB872300C44039 /* ZXITFWriter.m in Sources */,
@@ -2743,14 +2776,17 @@
 				0171B1F61BCB872300C44039 /* ZXQRCodeBitMatrixParser.m in Sources */,
 				0171B1A21BCB872300C44039 /* ZXMaxiCodeDecoder.m in Sources */,
 				0171B1B01BCB872300C44039 /* ZXAnyAIDecoder.m in Sources */,
+				8E3B70321BCCB46F002B8C14 /* KGVoucherListCell.m in Sources */,
 				0171B1A01BCB872300C44039 /* ZXMaxiCodeBitMatrixParser.m in Sources */,
 				0171B1851BCB872300C44039 /* ZXErrors.m in Sources */,
 				8ED2DB7F1BB2982E0025D16C /* KGCommonBaseVC.m in Sources */,
+				8E3B70271BCCB46F002B8C14 /* KGVoucherListVC.m in Sources */,
 				0171B16A1BCB872300C44039 /* ZXMonochromeRectangleDetector.m in Sources */,
 				0171B2111BCB872300C44039 /* ZXMultiFormatWriter.m in Sources */,
 				0171B15A1BCB872300C44039 /* ZXTelParsedResult.m in Sources */,
 				0171B1B31BCB872300C44039 /* ZXRSSExpandedDecodedChar.m in Sources */,
 				0171B1D71BCB872300C44039 /* ZXUPCEANExtension2Support.m in Sources */,
+				8E3B701B1BCCB46F002B8C14 /* KGOrderListVC.m in Sources */,
 				0171B1BB1BCB872300C44039 /* ZXRSSExpandedReader.m in Sources */,
 				0171B1D21BCB872300C44039 /* ZXMultiFormatUPCEANReader.m in Sources */,
 				8E3B6F621BCB5357002B8C14 /* IQTextView.m in Sources */,
@@ -2765,6 +2801,7 @@
 				0171B1341BCB872300C44039 /* rscode.c in Sources */,
 				309098A81BB6FC7B00C30BCE /* KGFormVC.m in Sources */,
 				0171B1F31BCB872300C44039 /* ZXPDF417Reader.m in Sources */,
+				8E3B70301BCCB46F002B8C14 /* KGUserCenterCell.m in Sources */,
 				0171B1F51BCB872300C44039 /* ZXPDF417Writer.m in Sources */,
 				0171B18E1BCB872300C44039 /* ZXDataMatrixDecodedBitStreamParser.m in Sources */,
 				8E3B6F5D1BCB5357002B8C14 /* IQUIViewController+Additions.m in Sources */,
@@ -2800,6 +2837,7 @@
 				0171B1CF1BCB872300C44039 /* ZXITFReader.m in Sources */,
 				012506711BC8E6A600EF5D40 /* MyAppointmentVC.m in Sources */,
 				0171B18A1BCB872300C44039 /* ZXResultPoint.m in Sources */,
+				8E3B70291BCCB46F002B8C14 /* KGDescriptionView.m in Sources */,
 				8ED2DB881BB29A420025D16C /* GlobalDataModel.m in Sources */,
 				0171B1C81BCB872300C44039 /* ZXCode39Writer.m in Sources */,
 				0171B1531BCB872300C44039 /* ZXProductParsedResult.m in Sources */,
@@ -2817,6 +2855,7 @@
 				0171B19A1BCB872300C44039 /* ZXDataMatrixSymbolInfo.m in Sources */,
 				0171B1AE1BCB872300C44039 /* ZXAI01decoder.m in Sources */,
 				0171B1E91BCB872300C44039 /* ZXPDF417ScanningDecoder.m in Sources */,
+				8E3B70151BCCB46F002B8C14 /* KGExchangeGiftVC.m in Sources */,
 				8E3B6F5C1BCB5357002B8C14 /* IQUIView+Hierarchy.m in Sources */,
 				30B4FCFC1BC15C9F00D100F8 /* SDWebImageCompat.m in Sources */,
 				0171B19D1BCB872300C44039 /* ZXDataMatrixX12Encoder.m in Sources */,
@@ -2845,7 +2884,6 @@
 				0171B1DE1BCB872300C44039 /* ZXModulusPoly.m in Sources */,
 				0171B1F91BCB872300C44039 /* ZXQRCodeDecodedBitStreamParser.m in Sources */,
 				0163934A1BC78CBB0052A6A5 /* SubmitApplyVC.m in Sources */,
-				8E3B6EE51BCA3D25002B8C14 /* KGRateExchangeVC.m in Sources */,
 				0171B21A1BCBA36A00C44039 /* KGMapView.m in Sources */,
 				0171B1591BCB872300C44039 /* ZXSMTPResultParser.m in Sources */,
 				0171B1CE1BCB872300C44039 /* ZXEANManufacturerOrgSupport.m in Sources */,
@@ -2866,6 +2904,7 @@
 				0171B17C1BCB872300C44039 /* ZXIntArray.m in Sources */,
 				0171B13C1BCB872300C44039 /* ZXAztecSimpleToken.m in Sources */,
 				30D702271BCC0F0E007B8063 /* CreatQRImage.m in Sources */,
+				8E3B701F1BCCB46F002B8C14 /* KGRateExchangeVC.m in Sources */,
 				0171B1D91BCB872300C44039 /* ZXUPCEANExtensionSupport.m in Sources */,
 				0171B1941BCB872300C44039 /* ZXDataMatrixC40Encoder.m in Sources */,
 				0171B1821BCB872300C44039 /* ZXDecodeHints.m in Sources */,
@@ -2875,13 +2914,14 @@
 				0171B1D31BCB872300C44039 /* ZXOneDimensionalCodeWriter.m in Sources */,
 				0171B1891BCB872300C44039 /* ZXResult.m in Sources */,
 				0171B1CC1BCB872300C44039 /* ZXEAN8Reader.m in Sources */,
+				8E3B70131BCCB46F002B8C14 /* KGBankDepositVC.m in Sources */,
 				0171B18C1BCB872300C44039 /* ZXDataMatrixBitMatrixParser.m in Sources */,
 				0163935F1BC78FF40052A6A5 /* ActivityListcell.m in Sources */,
 				0171B13B1BCB872300C44039 /* ZXAztecHighLevelEncoder.m in Sources */,
-				8E3B6EE71BCA3D25002B8C14 /* KGVoucherDetailVC.m in Sources */,
 				0171B1BE1BCB872300C44039 /* ZXRSS14Reader.m in Sources */,
 				0171B20D1BCB872300C44039 /* ZXQRCodeMultiReader.m in Sources */,
 				0171B1E21BCB872300C44039 /* ZXPDF417BoundingBox.m in Sources */,
+				8E3B70171BCCB46F002B8C14 /* KGLoginVC.m in Sources */,
 				0171B1541BCB872300C44039 /* ZXProductResultParser.m in Sources */,
 				0171B20A1BCB872300C44039 /* ZXQRCodeMatrixUtil.m in Sources */,
 				8E3B6F5A1BCB5357002B8C14 /* IQNSArray+Sort.m in Sources */,

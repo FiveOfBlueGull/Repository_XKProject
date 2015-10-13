@@ -45,4 +45,7 @@
  */
 - (void)goBack;
 
+- (void)alertWithMessage:(NSString *)message;
+
+- (void)alertWithMessage:(NSString *)message delay:(NSTimeInterval)delay;
 @end

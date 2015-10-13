@@ -71,7 +71,7 @@
 #pragma mark -- private 
 
 - (void)setupLeftBarButtonItem{
-    if (self.showingCustomBackButton && [[self.navigationController viewControllers] count] >= 2) {
+    if (self.showingCustomBackButton) {
         UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backItemImage"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
 //        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
         self.navigationItem.leftBarButtonItem = item;
@@ -94,6 +94,16 @@
 
 - (UIWindow *)window{
     return [[[UIApplication sharedApplication] delegate] window];
+}
+
+- (void)alertWithMessage:(NSString *)message{
+    UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [view show];
+}
+
+- (void)alertWithMessage:(NSString *)message delay:(NSTimeInterval)delay{
+    UIAlertView *view = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [view performSelector:@selector(show) withObject:nil afterDelay:delay];
 }
 
 /*

@@ -80,7 +80,7 @@
                             </connections>
                         </segmentedControl>
                     </subviews>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="55s-Nl-yjq" firstAttribute="leading" secondItem="S6S-Li-8pw" secondAttribute="trailing" id="70R-w2-Z49"/>
                         <constraint firstItem="55s-Nl-yjq" firstAttribute="top" secondItem="w6l-8K-0Og" secondAttribute="bottom" constant="8" id="8jM-W9-334"/>
@@ -164,7 +164,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="Q5k-tv-uNS" firstAttribute="top" secondItem="K2A-Ek-4Xe" secondAttribute="top" constant="9" id="2Kz-dF-PmD"/>
                         <constraint firstItem="sfR-Xc-xRY" firstAttribute="top" secondItem="TGx-ts-K3O" secondAttribute="bottom" constant="14" id="GJk-TP-Cbs"/>
@@ -188,13 +188,13 @@
                     <rect key="frame" x="0.0" y="195" width="320" height="116"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存款总额(元)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-G0-bHI">
-                            <rect key="frame" x="0.0" y="14" width="141" height="21"/>
+                            <rect key="frame" x="0.0" y="13" width="141" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入存款金额" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4u7-AS-R3b">
-                            <rect key="frame" x="140" y="10" width="180" height="30"/>
+                            <rect key="frame" x="140" y="9" width="180" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <connections>
@@ -202,19 +202,19 @@
                             </connections>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年利率(%)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JR7-rW-mfe">
-                            <rect key="frame" x="0.0" y="89" width="141" height="21"/>
+                            <rect key="frame" x="0.0" y="86" width="141" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.35" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8C-xg-Bka">
-                            <rect key="frame" x="140" y="89" width="180" height="21"/>
+                            <rect key="frame" x="140" y="86" width="180" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3个月定期" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYm-hl-Baz">
-                            <rect key="frame" x="140" y="52" width="180" height="21"/>
+                            <rect key="frame" x="140" y="49" width="180" height="21"/>
                             <gestureRecognizers/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -224,13 +224,13 @@
                             </connections>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="存款期限" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-d8-2md">
-                            <rect key="frame" x="0.0" y="52" width="141" height="21"/>
+                            <rect key="frame" x="0.0" y="48" width="141" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="116" id="Xf5-vG-Aji"/>
@@ -241,7 +241,7 @@
                     <subviews>
                         <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1t-y4-xWN">
                             <rect key="frame" x="0.0" y="324" width="320" height="180"/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="180" id="k6P-8T-uzE"/>
                             </constraints>
@@ -280,7 +280,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="dLL-Ip-DNn" secondAttribute="trailing" constant="9" id="3AB-Dc-wwA"/>
                                 <constraint firstAttribute="bottom" secondItem="dLL-Ip-DNn" secondAttribute="bottom" constant="3" id="BGo-6c-CXj"/>
@@ -290,7 +290,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="D1t-y4-xWN" secondAttribute="trailing" id="Ox8-Wa-Qoo"/>
                         <constraint firstItem="D1t-y4-xWN" firstAttribute="leading" secondItem="Vt4-5Q-nkw" secondAttribute="leading" id="RSj-Ni-54l"/>
@@ -320,7 +320,7 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="198" y="313"/>
+            <point key="canvasLocation" x="53" y="327"/>
         </view>
         <tapGestureRecognizer id="lFk-MM-HXj">
             <connections>
