@@ -8,6 +8,7 @@
 
 #import "KGVoucherDetailVC.h"
 #import "KGDescriptionView.h"
+#import "KGQRCodeVC.h"
 
 @interface KGVoucherDetailVC ()
 
@@ -148,7 +149,15 @@
 #pragma mark --
 
 - (IBAction)showVoucherNumber{
-    
+    KGQRCodeVC *_QRCodeVC = [[KGQRCodeVC alloc] initWithNibName:@"KGQRCodeVC" bundle:nil customBackButton:YES];
+    _QRCodeVC.targetObject = _voucher;
+    if (self.shop) {
+         _QRCodeVC.activityObject = _shop;
+    } else {
+        _QRCodeVC.activityObject = _activity;
+    }
+   
+    [self.navigationController pushViewController:_QRCodeVC animated:YES];
 }
 
 - (IBAction)getAccount{

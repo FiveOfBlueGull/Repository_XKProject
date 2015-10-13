@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KGCommonBaseVC.h"
 
-@interface KGActivityDetailVC : UIViewController
+@interface KGActivityDetailVC : KGCommonBaseVC
 
 @property (strong, nonatomic) NSString *activityID;
 

@@ -23,15 +23,72 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1];
     self.tableView.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:1];
+    [self _setLeftBarItem];
     [self.view addSubview:self.tableView];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    if (self.callBack) {
+}
+
+- (void)_setLeftBarItem{
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backItemImage"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+    self.navigationItem.leftBarButtonItem = item;
+}
+
+
+#pragma mark - Action - 
+- (void)goBack{
+    
+    NSString *string = self.inputText.text;
+    if (self.editType == EditTypePhone  ) {
         
-        self.callBack(self.inputText.text);
+        if (string.length != 11) {
+            
+            NSString *message = @"请填写正确的手机号";
+            UIAlertView *alertV = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            [alertV show];
+            return ;
+        }
     }
+    
+    
+    if (self.editType == EditTypeIDCard) {
+        
+        if (string.length != 18) {
+            NSString *message = @"请填写正确的身份证号";
+            UIAlertView *alertV = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            [alertV show];
+            return ;
+
+        }
+    }
+    
+    if (self.editType == EditTypeMoney) {
+        
+        NSInteger count = [string integerValue];
+        
+        if (count <= 0 || count >= 100000) {
+            NSString *message = @"请填写金额,不低于1，不高于100000";
+            UIAlertView *alertV = [[UIAlertView alloc] initWithTitle:@"提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            [alertV show];
+            return ;
+            
+        }
+    }
+
+    
+    
+    
+    
+    
+    if (self.callBack) {
+        self.callBack(string);
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
 
 
@@ -92,7 +149,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIden];
        
-        
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell addSubview:[self _getLineWithFrame:CGRectMake(0, 0, ScreenWidth, 1/ScreenScale)]];
         [cell addSubview:self.inputText];
         [cell addSubview:[self _getLineWithFrame:CGRectMake(0, 44 - 1/ScreenScale, ScreenWidth, 1/ScreenScale)]];

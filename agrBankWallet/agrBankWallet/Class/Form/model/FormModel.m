@@ -19,8 +19,22 @@
         self.aPhoneNum = @"";
         self.aIdCard = @"";
         self.aAddress = @"";
+        self.aDeterm = @"";
+        self.aMoney = @"";
+        self.aWay = @"";
+        
+        self.aZone = @"";
+        self.aDate = @"";
+        
+        self.aItem = @"";
     }
     return self;
+}
+
+
+- (void)setValuesWithDictinoary:(NSDictionary *)dic{
+    
+    
 }
 
 

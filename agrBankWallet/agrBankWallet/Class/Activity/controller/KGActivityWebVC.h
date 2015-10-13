@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KGCommonBaseVC.h"
 
-@interface KGActivityWebVC : UIViewController
+@interface KGActivityWebVC : KGCommonBaseVC
 
-@property (nonatomic, strong) NSString *webUrl;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) AVObject *targetObject;
+
 @end
